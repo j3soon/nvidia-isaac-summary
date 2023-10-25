@@ -1,12 +1,14 @@
 # NVIDIA Isaac Summary
 
-A list of NVIDIA Isaac components.
+A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
 - (Omniverse) Isaac Sim [[link](https://developer.nvidia.com/isaac-sim)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/overview.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-OV-01+V1/)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+S-OV-03+V1/)][[youtube](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)]  
   a robotics simulation toolkit based on Omniverse.
   > a scalable robotics simulation application and synthetic data-generation tool that powers photorealistic, physically accurate virtual environments.
   >
   > -- [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac-sim)
+
+  Before starting, please make sure your hardware and software meet the [system requirements](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html#system-requirements).
 
   Technically, Isaac Sim is an app built upon Omniverse Kit, which is a SDK for building apps upon the Omniverse platform. The simulation is accelerated by PhysX, while the scene is rendered through RTX rendering.  
   Isaac Sim can be downloaded through [Omniverse Launcher](https://www.nvidia.com/en-us/omniverse/download/) here:
@@ -66,20 +68,28 @@ A list of NVIDIA Isaac components.
 
   Omniverse Isaac Gym is a light-weight framework focusing on reinforcement learning tasks, while Isaac Orbit is a more general and modular framework that focuses on robotics applications. ([source](https://nvidia.slack.com/archives/C01TGK0GSJG/p1675192628308169?thread_ts=1674981564.933639&cid=C01TGK0GSJG))
 
-- Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common/blob/main/docs/dev-env-setup.md)]  
+- Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://nvidia-isaac-ros.github.io/getting_started/index.html)]  
   a collection of GPU-accelerated ROS2 packages (i.e., Isaac GEMs).  
   > a collection of hardware-accelerated packages that make it easier for ROS developers to build high-performance solutions on NVIDIA hardware.
   >
   > -- [Isaac ROS](https://developer.nvidia.com/isaac-ros)
 
   The term `Isaac ROS` refer to the packages for ROS 2, instead of Isaac SDK. Isaac ROS should not be confused with the `ROS & ROS 2 Bridges` in Isaac Sim, or the `ROS Bridge` in Isaac SDK.  
-  The packages (i.e., Isaac GEMs) are named as `Isaac ROS <Package_Name>`. Unfortunately, ambiguous terms such as `Isaac Elbrus` still exist ([source](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam)). Since the Elbrus package exist in both Isaac ROS and Isaac SDK, Elbrus should be refered to as `Isaac ROS Elbrus` for preciseness.
+  The packages (i.e., Isaac GEMs) are named as `Isaac ROS <Package_Name>`. Unfortunately, ambiguous terms such as `Isaac Elbrus` still exist ([source](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam)). Since the Elbrus package exist in both Isaac ROS and Isaac SDK, Elbrus should be refered to as `Isaac ROS Elbrus` for preciseness.  
 
+  Before starting, please make sure your PC/Jetson hardware and software meet the [system requirements](https://nvidia-isaac-ros.github.io/getting_started/index.html#system-requirements). After checking the requirements, I suggest you start from the Nvblox tutorial below.
+
+  - (Isaac ROS) Nvblox [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)]
+    > processes depth and pose to reconstruct a 3D scene in real-time and outputs a 2D costmap for Nav2. The costmap is used in planning during navigation as a vision-based solution to avoid obstacles.
+    >
+    > -- [Isaac ROS Nvblox](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)
+
+    You can quickly experience the power of Isaac ROS by simply following the [the quick start guide](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/isaac_ros_nvblox/index.html#quickstart) of Nvblox.
   - (Isaac ROS) NVIDIA Isaac for Transport for ROS (NITROS) [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros)]
-    > the NVIDIA implementation of type adaption and negotiation for ROS2 that eliminates software/CPU overhead and improves performance of hardware acceleration. 
+    > the NVIDIA implementation of type adaption and negotiation for ROS2 that eliminates software/CPU overhead and improves performance of hardware acceleration.
     >
     > -- [Isaac ROS](https://developer.nvidia.com/isaac-ros) (slightly rephrased)
-  - [etc.](https://github.com/NVIDIA-ISAAC-ROS/.github/blob/main/profile/package-summary.md)
+  - [etc.](https://nvidia-isaac-ros.github.io/repositories_and_packages/index.html)
 
 - Isaac SDK [[link](https://developer.nvidia.com/isaac-sdk)][[docs](https://docs.nvidia.com/isaac/doc/index.html)]  
   a toolkit for deploying GPU-accelerated algorithms on physical robots.
@@ -122,6 +132,26 @@ A list of NVIDIA Isaac components.
   >
   > -- [NVIDIA Isaac for AMRs](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)
 
+- Isaac AMR [[link](https://developer.nvidia.com/isaac/amr)]  
+  an end-to-end solution for AMRs, including mapping, autonomy, and simulation.
+  > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
+  >
+  > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
+  >
+  > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
+
+- Isaac Nova Orin [[link](https://developer.nvidia.com/isaac/nova-orin)]  
+  a reference architecture for AMRs based on NVIDIA Jetson AGX Orin.
+  > a state-of-the-art compute and sensor reference architecture to accelerate AMR development and deployment. It features up to two Jetson AGX Orin computers and a full sensor suite for next-gen AMRs that enable surround vision-based perception with lidar-based solutions.
+  >
+  > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
+
+  - Nova Carter [[link](https://robotics.segway.com/nova-carter/)] [[spec](https://docs.nvidia.com/isaac/doc/novacarter.html)]  
+    a reference design robot based on the Isaac Nova Orin architecture.
+    > a reference design robot that uses the Nova Orin compute and sensor architecture. It’s a complete robotics development platform that accelerates the development and deployment of next-generation Autonomous Mobile Robots (AMRs). You can learn more about it from our partner, Segway Robotics
+    >
+    > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
+
 - cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
   a GPU-accelerated solver for [vehicle routing problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem).  
   Previously named as ReOpt.
@@ -151,4 +181,6 @@ To the best of my knowledge, there is no public Cloud Services (such as [NVIDIA 
 
 Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if you have spotted any errors.
 
-Last updated on 2023/05/14.
+I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
+
+Last updated on 2023/10/25.
