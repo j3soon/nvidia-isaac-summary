@@ -15,7 +15,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   - [Linux](https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage)
   - [Windows](https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe)
 
-  The required assets are accessed through [Omniverse Nucleus](https://docs.omniverse.nvidia.com/prod_nucleus/prod_nucleus/overview.html), which requires setting up a (local) Nucleus account. In addition, installing [Omniverse Cache](https://docs.omniverse.nvidia.com/prod_utilities/prod_utilities/cache/overview.html) can speed up the access to Nucleus.
+  The required assets are accessed through [Omniverse Nucleus](https://docs.omniverse.nvidia.com/nucleus/latest/index.html), which requires setting up a (local) Nucleus account. In addition, installing [Omniverse Cache](https://docs.omniverse.nvidia.com/prod_utilities/prod_utilities/cache/overview.html) can speed up the access to Nucleus.
   - Isaac Sim Unity3D [[docs](https://docs.nvidia.com/isaac/archive/2020.1/doc/simulation/unity3d.html)]  
     Unity3D support has been deprecated ([source](https://forums.developer.nvidia.com/t/no-isaac-sim-unity3d-to-download/212951)). The term `Isaac Sim` now refer to the Omniverse-based version.
     > allows you to use Unity3D as the simulation environment for Isaac robotics.
@@ -91,7 +91,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > -- [Isaac ROS](https://developer.nvidia.com/isaac-ros) (slightly rephrased)
   - [etc.](https://nvidia-isaac-ros.github.io/repositories_and_packages/index.html)
 
-- Isaac SDK [[link](https://developer.nvidia.com/isaac-sdk)][[docs](https://docs.nvidia.com/isaac/doc/index.html)]  
+- Isaac SDK [[docs](https://docs.nvidia.com/isaac/archive/2021.1/doc/index.html)]  
   a toolkit for deploying GPU-accelerated algorithms on physical robots.
   > a toolkit that includes building blocks and tools that accelerate robot developments that require the increased perception and navigation features enabled by AI.
   >
@@ -108,29 +108,23 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   - Isaac GEMs
     > a collection of high-performance algorithms, also called GEMs, to accelerate the development of challenging robotics applications.
     >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/doc/overview.html#isaac-gems)
-
-    - ROS Bridge
-      > create a message translation layer between Isaac SDK and ROS to communicate between the two systems.
-      >
-      > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/packages/ros_bridge/doc/ros_bridge.html) (slightly rephrased)
-    - etc.
+    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-gems)
 
   - Isaac Applications
     > provides various sample applications, which highlight features of Isaac SDK Engine or focus on the functionality of a particular Isaac SDK GEM.
     >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/doc/overview.html#isaac-applications)
+    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-applications)
 
   - Isaac (Robotics) Engine
     > a feature-rich framework for building modular robotics applications.
     >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/doc/overview.html#isaac-engine)
+    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-engine)
 
-- Isaac for AMRs [[link](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)]  
+- Isaac for AMRs [[link](https://www.nvidia.com/en-in/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)]  
   a list of AMR-related software and hardwares.
   > a new open platform with edge-to-cloud compute and powerful software stacks for AI-enabled Autonomous Mobile Robots (AMRs)
   >
-  > -- [NVIDIA Isaac for AMRs](https://www.nvidia.com/en-us/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)
+  > -- [NVIDIA Isaac for AMRs](https://www.nvidia.com/en-in/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)
 
 - Isaac AMR [[link](https://developer.nvidia.com/isaac/amr)]  
   an end-to-end solution for AMRs, including mapping, autonomy, and simulation.
