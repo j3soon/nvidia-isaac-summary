@@ -35,6 +35,8 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > a set of APIs that are designed to be used in robotics applications, APIs that abstract away the complexity of USD APIs and merge multiple steps into one for frequently performed tasks.
     >
     > -- [NVIDIA Isaac Core API](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_core_hello_world.html#isaac-sim-app-tutorial-core-hello-world)
+  - Isaac Sim Assets [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/features/environment_setup/assets/usd_assets_overview.html)]  
+    A collection of USD assets including environments, robots, sensors, props, and other featured assets.
   - other features such as [OmniGraph](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gui_omnigraph.html), [Importers](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/manual_isaac_extensions.html#asset-conversion-extensions), [etc.](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/manual_isaac_extensions.html)
 
 - (Omniverse) Isaac Gym [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)][[github](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)]  
@@ -120,25 +122,17 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-engine)
 
-- Isaac for AMRs [[link](https://www.nvidia.com/en-in/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)]  
-  a list of AMR-related software and hardwares.
-  > a new open platform with edge-to-cloud compute and powerful software stacks for AI-enabled Autonomous Mobile Robots (AMRs)
+- Isaac Perceptor [[link](https://developer.nvidia.com/isaac/perceptor)]  
+  Formerly _Isaac for AMRs_ and _Isaac AMR_.
+  > a collection of hardware-accelerated packages for visual AI, tailored for Autonomous Mobile Robot (AMR) to perceive, localize, and operate robustly in unstructured environments. Robotics software developers can now easily access turnkey AI-based perception capabilities, ensuring reliable operations and obstacle detection in complex scenarios.
   >
-  > -- [NVIDIA Isaac for AMRs](https://www.nvidia.com/en-in/deep-learning-ai/industries/robotics/autonomous-mobile-robots/)
+  > -- [NVIDIA Isaac Perceptor](https://developer.nvidia.com/isaac/perceptor)
 
-- Isaac AMR [[link](https://developer.nvidia.com/isaac/amr)]  
-  an end-to-end solution for AMRs, including mapping, autonomy, and simulation.
-  > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
-  >
-  > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
-  >
-  > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
-
-- Isaac Nova Orin [[link](https://developer.nvidia.com/isaac/nova-orin)]  
-  a reference architecture for AMRs based on NVIDIA Jetson AGX Orin.
-  > a state-of-the-art compute and sensor reference architecture to accelerate AMR development and deployment. It features up to two Jetson AGX Orin computers and a full sensor suite for next-gen AMRs that enable surround vision-based perception with lidar-based solutions.
-  >
-  > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
+  - Isaac Nova Orin [[link](https://developer.nvidia.com/isaac/nova-orin)]  
+    a reference architecture for AMRs based on NVIDIA Jetson AGX Orin.
+    > a state-of-the-art compute and sensor reference architecture to accelerate AMR development and deployment. It features up to two Jetson AGX Orin computers and a full sensor suite for next-gen AMRs that enable surround vision-based perception with lidar-based solutions.
+    >
+    > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
   - Nova Carter [[link](https://robotics.segway.com/nova-carter/)] [[spec](https://docs.nvidia.com/isaac/doc/novacarter.html)]  
     a reference design robot based on the Isaac Nova Orin architecture.
@@ -146,9 +140,29 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
+- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)]
+  > a collection of foundation models and modular GPU-accelerated libraries that help build scalable and repeatable workflows for dynamic manipulation tasks by accelerating AI model training and task (re)programming. It’s revolutionizing how robotics software developers can leverage customized software components for specific tasks such as machine tending, assembly tasks, etc., enabling manipulation arms to seamlessly perceive and interact with their surroundings.
+  >
+  > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
+
+- Isaac Lab [[link](https://developer.nvidia.com/isaac-sim#isaac-lab)]
+  > a lightweight reference application built on the Isaac Sim platform specifically optimized for robot learning and is pivotal for robot foundation model training. Isaac Lab optimizes for reinforcement, imitation, and transfer learning, and is capable of training all types of robot embodiments including the Project GR00T foundation model for humanoids.
+  >
+  > -- [NVIDIA Isaac Lab](https://developer.nvidia.com/isaac-sim#isaac-lab)
+
+- OSMO [[link](https://developer.nvidia.com/osmo)]
+  > a cloud-native workflow orchestration platform that lets you easily scale your workloads across distributed environments—from on-premises to private and public cloud. It provides a single pane of glass for scheduling complex multi-stage and multi-container heterogeneous computing workflows.
+  >
+  > -- [NVIDIA OSMO](https://developer.nvidia.com/osmo)
+
+- Project GR00T [[link](https://developer.nvidia.com/project-GR00T)]
+  > a general-purpose foundation model that promises to transform humanoid robot learning in simulation and the real world. Trained in NVIDIA GPU-accelerated simulation, GR00T enables humanoid embodiments to learn from a handful of human demonstrations with imitation learning and NVIDIA Isaac Lab for reinforcement learning, as well as generating robot movements from video data. The GR00T model takes multimodal instructions and past interactions as input and produces the actions for the robot to execute.
+  >
+  > -- [NVIDIA Project GR00T](https://developer.nvidia.com/project-GR00T)
+
 - cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
   a GPU-accelerated solver for [vehicle routing problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem).  
-  Previously named as ReOpt.
+  Formerly _ReOpt_.
   > a GPU-accelerated logistics solver that uses heuristics and optimizations to calculate complex vehicle routing problem variants with a wide range of constraints.
   >
   > -- [NVIDIA cuOpt](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)
@@ -162,7 +176,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   > an advanced, extensible SDK to generate physically accurate 3D synthetic data, and easily build custom synthetic data generation (SDG) tools to accelerate the training and accuracy of perception networks.
   >
   > -- [NVIDIA Replicator](https://developer.nvidia.com/nvidia-omniverse-platform/replicator)
-  - Isaac Sim Replicator [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_replicator_getting_started.html)]
+  - Isaac Sim Replicator [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/replicator_tutorials/index.html)]
     > a collection of extensions, python APIs, workflows, and tools such as Replicator Composer that enable a variety of synthetic data generation tasks.
     >
     > -- [NVIDIA Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/manual_replicator.html)
@@ -171,10 +185,13 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Replicator Insight](https://developer.nvidia.com/nvidia-omniverse/replicator-insight-eap)
 
-To the best of my knowledge, there is no public Cloud Services (such as [NVIDIA NeMo Service](https://www.nvidia.com/en-us/gpu-cloud/nemo-llm-service/)) for Isaac at the time of writing. Nevertheless, it is possible to self-host a cloud service on-premise for Isaac though.
+- Omniverse Cloud [[link](https://www.nvidia.com/en-us/omniverse/cloud/)]
+  > a platform of APIs, SDKs, and services available within a full-stack cloud environment for enterprise developers to easily integrate Universal Scene Description (OpenUSD) and RTX rendering technologies into their 3D industrial digitalization applications.
+  >
+  > -- [NVIDIA Omniverse Cloud](https://www.nvidia.com/en-us/omniverse/cloud/)
 
 Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if you have spotted any errors.
 
 I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
-Last updated on 2023/10/25.
+Last updated on 2024/04/10.
