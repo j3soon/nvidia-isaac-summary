@@ -163,6 +163,14 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
+- Isaac AMR [[link](https://developer.nvidia.com/isaac/amr)]  
+  an end-to-end solution for AMRs, including mapping, autonomy, and simulation.
+  > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
+  >
+  > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
+  >
+  > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
+
 - Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)]
   > a collection of foundation models and modular GPU-accelerated libraries that help build scalable and repeatable workflows for dynamic manipulation tasks by accelerating AI model training and task (re)programming. It’s revolutionizing how robotics software developers can leverage customized software components for specific tasks such as machine tending, assembly tasks, etc., enabling manipulation arms to seamlessly perceive and interact with their surroundings.
   >
