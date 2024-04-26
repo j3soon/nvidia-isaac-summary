@@ -147,6 +147,10 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac Perceptor](https://developer.nvidia.com/isaac/perceptor)
 
+  Personally, I think these GPU-accelerated packages would be released as Isaac ROS packages in the future. This means we can expect more versatile and powerful Isaac ROS packages than currently released packages such as [Isaac ROS Nvblox](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html) for navigation tasks.
+
+  The developer preview is planned for Q2, 2024. ([source](https://developer.nvidia.com/isaac/perceptor))
+
   - Isaac Nova Orin [[link](https://developer.nvidia.com/isaac/nova-orin)]  
     a reference architecture for AMRs based on NVIDIA Jetson AGX Orin.
     > a state-of-the-art compute and sensor reference architecture to accelerate AMR development and deployment. It features up to two Jetson AGX Orin computers and a full sensor suite for next-gen AMRs that enable surround vision-based perception with lidar-based solutions.
@@ -164,20 +168,30 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
 
+  Personally, I think these GPU-accelerated packages would be released as Isaac ROS packages in the future. For an example, the cuRobo library may be packaged as a cuMotion ROS 2 package. This means we can expect more versatile and powerful Isaac ROS packages than currently released packages such as [Isaac ROS Pose Estimation](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/index.html) for manipulation tasks.
+
+  The developer preview is planned for Q2, 2024. ([source](https://developer.nvidia.com/isaac/manipulator))
+
 - Isaac Lab [[link](https://developer.nvidia.com/isaac-sim#isaac-lab)]
   > a lightweight reference application built on the Isaac Sim platform specifically optimized for robot learning and is pivotal for robot foundation model training. Isaac Lab optimizes for reinforcement, imitation, and transfer learning, and is capable of training all types of robot embodiments including the Project GR00T foundation model for humanoids.
   >
   > -- [NVIDIA Isaac Lab](https://developer.nvidia.com/isaac-sim#isaac-lab)
+
+  Isaac Lab is built upon Isaac Sim. However, I'm not sure about its relationship with Omniverse Isaac Gym or Isaac Orbit yet.
 
 - OSMO [[link](https://developer.nvidia.com/osmo)]
   > a cloud-native workflow orchestration platform that lets you easily scale your workloads across distributed environments—from on-premises to private and public cloud. It provides a single pane of glass for scheduling complex multi-stage and multi-container heterogeneous computing workflows.
   >
   > -- [NVIDIA OSMO](https://developer.nvidia.com/osmo)
 
-- Project GR00T [[link](https://developer.nvidia.com/project-GR00T)]
+  OSMO refers to an orchestration platform, which can take a workflow spec and run the specified workloads on Omniverse Cloud or DGX Cloud.
+
+- Project GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/project-GR00T)]
   > a general-purpose foundation model that promises to transform humanoid robot learning in simulation and the real world. Trained in NVIDIA GPU-accelerated simulation, GR00T enables humanoid embodiments to learn from a handful of human demonstrations with imitation learning and NVIDIA Isaac Lab for reinforcement learning, as well as generating robot movements from video data. The GR00T model takes multimodal instructions and past interactions as input and produces the actions for the robot to execute.
   >
   > -- [NVIDIA Project GR00T](https://developer.nvidia.com/project-GR00T)
+
+  The GR00T model refers to a general-purpose foundation model for humanoid robots trained in Isaac Lab with imitation learning and reinforcement learning.
 
 - cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
   a GPU-accelerated solver for [vehicle routing problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem).  
