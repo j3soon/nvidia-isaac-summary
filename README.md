@@ -126,6 +126,8 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
   The latest release of Isaac SDK is 2021.1, since the future roadmap of Isaac SDK is still under development ([source](https://forums.developer.nvidia.com/t/isaac-sdk-next-release/217841/2), [source](https://forums.developer.nvidia.com/t/is-isaac-depreciated/224402), [source](https://forums.developer.nvidia.com/t/isaac-sdk-is-dead/226267/2), [source](https://nvidia.slack.com/archives/CHG4MCWNQ/p1661260234425319?thread_ts=1658787137.725279&cid=CHG4MCWNQ)).
 
+  The Isaac Sight GUI also belongs to Isaac SDK.
+
   - Isaac GEMs
     > a collection of high-performance algorithms, also called GEMs, to accelerate the development of challenging robotics applications.
     >
@@ -163,13 +165,14 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
-- Isaac AMR [[link](https://developer.nvidia.com/isaac/amr)]  
-  an end-to-end solution for AMRs, including mapping, autonomy, and simulation.
+- Isaac AMR [[link](https://docs.nvidia.com/isaac/doc/index.html)]  
   > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
   >
   > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
   >
   > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
+
+  Personally, I think Isaac AMR is an extension of Isaac SDK. This is based on the Isaac Sight UI screenshots in [source](https://docs.nvidia.com/isaac/doc/extensions/navigation_stack/doc/navigation_stack_on_isaac_sim.html), and I've noticed some Isaac SDK docs have been redirected/moved to Isaac AMR docs.
 
 - Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)]
   > a collection of foundation models and modular GPU-accelerated libraries that help build scalable and repeatable workflows for dynamic manipulation tasks by accelerating AI model training and task (re)programming. It’s revolutionizing how robotics software developers can leverage customized software components for specific tasks such as machine tending, assembly tasks, etc., enabling manipulation arms to seamlessly perceive and interact with their surroundings.
