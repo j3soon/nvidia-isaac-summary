@@ -85,7 +85,9 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac Orbit](https://github.com/NVIDIA-Omniverse/Orbit)
 
-  Omniverse Isaac Gym is a light-weight framework focusing on reinforcement learning tasks, while Isaac Orbit is a more general and modular framework that focuses on robotics applications. ([source](https://github.com/NVIDIA-Omniverse/orbit/blob/main/docs/source/setup/faq.rst), [source](https://nvidia.slack.com/archives/C01TGK0GSJG/p1675192628308169?thread_ts=1674981564.933639&cid=C01TGK0GSJG))
+  Omniverse Isaac Gym is a light-weight framework focusing on reinforcement learning tasks, while Isaac Orbit is a more general and modular framework that focuses on robotics applications. ([source](https://github.com/NVIDIA-Omniverse/orbit/blob/main/docs/source/setup/faq.rst), [source](https://forums.developer.nvidia.com/t/orbit-vs-omniisaacgymenvs/251329/3))
+
+  Personally, I think Isaac Orbit is preferred for general usages such as creating custom environments. However, if you are writing a research paper and just want to use built-in Omniverse Isaac Gym Environments for benchmarking, Omniverse Isaac Gym may be enough.
 
 - Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://nvidia-isaac-ros.github.io/getting_started/index.html)]  
   a collection of GPU-accelerated ROS2 packages (i.e., Isaac GEMs).  
