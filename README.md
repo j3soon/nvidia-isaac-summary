@@ -16,7 +16,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac](https://developer.nvidia.com/isaac)
 
-  Isaac stands as NVIDIA's GPU-accelerated solution for robotics, which refers to the robotics platform instead of a specific software component. Alongside essential tools for general AI applications (such as TensorRT, TAO Toolkit, and Triton Inference Server), Isaac comprises two primary branches for local execution: Simulation and Deployment. The Simulation branch, including components like Isaac Sim and Isaac Gym, currently requires the use of x86 CPUs and RTX GPUs to accelerated simulations. Conversely, the Deployment branch, featuring components like Isaac ROS, can run on both PC and on Jetson hardware.
+  Isaac stands as NVIDIA's GPU-accelerated solution for robotics, which refers to the robotics platform instead of a specific software component. Alongside essential tools for general AI applications (such as TensorRT, TAO Toolkit, and Triton Inference Server), NVIDIA Isaac components can be categorized into two main branches: (1) Isaac Sim (including Isaac Gym, Isaac Orbit, etc.) for simulation, which currently requires x86 CPUs and RTX GPUs for acceleration. (2) Isaac ROS for deployment, which can run on both PCs (x86 CPUs) and on Jetson hardware (ARM CPUs).
 
 - (Omniverse) Isaac Sim [[link](https://developer.nvidia.com/isaac-sim)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/overview.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-OV-01+V1/)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+S-OV-03+V1/)][[youtube](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)]  
   a robotics simulation toolkit based on Omniverse.
@@ -90,10 +90,12 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   Personally, I think Isaac Orbit is preferred for general usages such as creating custom environments. However, if you are writing a research paper and just want to use built-in Omniverse Isaac Gym Environments for benchmarking, Omniverse Isaac Gym may be enough.
 
 - Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://nvidia-isaac-ros.github.io/getting_started/index.html)]  
-  a collection of GPU-accelerated ROS2 packages (i.e., Isaac GEMs).  
+  a collection of GPU-accelerated ROS2 packages (i.e., Isaac GEMs) and pipelines.  
   > a collection of hardware-accelerated packages that make it easier for ROS developers to build high-performance solutions on NVIDIA hardware.
   >
   > -- [Isaac ROS](https://developer.nvidia.com/isaac-ros)
+
+  In legacy robotics deployment systems, ROS1 is commonly used but [lacks support for key use cases](https://design.ros2.org/articles/why_ros2.html) such as multi-robot systems, real-time systems, and production-ready environments. Therefore, ROS2 was developed to address these issues. However, using ROS2 can still present challenges, such as reproducibility across different systems and efficient GPU communication between ROS nodes. Isaac ROS, a collection of GPU-accelerated ROS2 packages and pipelines, addresses these challenges by (1) adopting a workflow based on the [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) (previously NVIDIA Docker) to ensure reproducibility across systems, allowing near-identical deployment experiences across systems with x86 and ARM CPUs, and (2) enabling efficient GPU communication between ROS nodes by reducing memory copies between GPUs and CPUs through [NITROS](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros).
 
   The term `Isaac ROS` refer to the packages for ROS 2, instead of Isaac SDK. Isaac ROS should not be confused with the `ROS & ROS 2 Bridges` in Isaac Sim, or the `ROS Bridge` in Isaac SDK.  
   The packages (i.e., Isaac GEMs) are named as `Isaac ROS <Package_Name>`. Unfortunately, ambiguous terms such as `Isaac Elbrus` still exist ([source](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam)). Since the Elbrus package exist in both Isaac ROS and Isaac SDK, Elbrus should be refered to as `Isaac ROS Elbrus` for preciseness.  
@@ -145,6 +147,15 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-engine)
 
+- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)]
+  > a collection of foundation models and modular GPU-accelerated libraries that help build scalable and repeatable workflows for dynamic manipulation tasks by accelerating AI model training and task (re)programming. It’s revolutionizing how robotics software developers can leverage customized software components for specific tasks such as machine tending, assembly tasks, etc., enabling manipulation arms to seamlessly perceive and interact with their surroundings.
+  >
+  > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
+
+  Personally, I think these GPU-accelerated packages would be released as Isaac ROS packages in the future. For an example, the cuRobo library may be packaged as a cuMotion ROS 2 package. This means we can expect more versatile and powerful Isaac ROS packages than currently released packages such as [Isaac ROS Pose Estimation](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/index.html) for manipulation tasks.
+
+  The developer preview is planned for Q2, 2024. ([source](https://developer.nvidia.com/isaac/manipulator))
+
 - Isaac Perceptor [[link](https://developer.nvidia.com/isaac/perceptor)]  
   Formerly _Isaac for AMRs_ and _Isaac AMR_.
   > a collection of hardware-accelerated packages for visual AI, tailored for Autonomous Mobile Robot (AMR) to perceive, localize, and operate robustly in unstructured environments. Robotics software developers can now easily access turnkey AI-based perception capabilities, ensuring reliable operations and obstacle detection in complex scenarios.
@@ -167,7 +178,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
-- Isaac AMR [[link](https://docs.nvidia.com/isaac/doc/index.html)]  
+- Isaac AMR (before Isaac Perceptor) [[link](https://docs.nvidia.com/isaac/doc/index.html)]  
   > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
   >
   > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
@@ -175,15 +186,6 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
 
   Personally, I think Isaac AMR is an extension of Isaac SDK. This is based on the Isaac Sight UI screenshots in [source](https://docs.nvidia.com/isaac/doc/extensions/navigation_stack/doc/navigation_stack_on_isaac_sim.html), and I've noticed some Isaac SDK docs have been redirected/moved to Isaac AMR docs.
-
-- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)]
-  > a collection of foundation models and modular GPU-accelerated libraries that help build scalable and repeatable workflows for dynamic manipulation tasks by accelerating AI model training and task (re)programming. It’s revolutionizing how robotics software developers can leverage customized software components for specific tasks such as machine tending, assembly tasks, etc., enabling manipulation arms to seamlessly perceive and interact with their surroundings.
-  >
-  > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
-
-  Personally, I think these GPU-accelerated packages would be released as Isaac ROS packages in the future. For an example, the cuRobo library may be packaged as a cuMotion ROS 2 package. This means we can expect more versatile and powerful Isaac ROS packages than currently released packages such as [Isaac ROS Pose Estimation](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/index.html) for manipulation tasks.
-
-  The developer preview is planned for Q2, 2024. ([source](https://developer.nvidia.com/isaac/manipulator))
 
 - Isaac Lab [[link](https://developer.nvidia.com/isaac-sim#isaac-lab)]
   > a lightweight reference application built on the Isaac Sim platform specifically optimized for robot learning and is pivotal for robot foundation model training. Isaac Lab optimizes for reinforcement, imitation, and transfer learning, and is capable of training all types of robot embodiments including the Project GR00T foundation model for humanoids.
