@@ -222,6 +222,17 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
   Personally, I think Isaac AMR is an extension of Isaac SDK. This is based on the Isaac Sight UI screenshots in [source](https://docs.nvidia.com/isaac/doc/extensions/navigation_stack/doc/navigation_stack_on_isaac_sim.html), and I've noticed some Isaac SDK docs have been redirected/moved to Isaac AMR docs.
 
+### Mission Dispatch and Client
+
+- Isaac Mission Dispatch [[github](https://github.com/nvidia-isaac/isaac_mission_dispatch)]
+  > a cloud service that enables the communication between edge robots and other cloud services responsible for managing a fleet of robots. The communication between Mission Dispatch and robots is designed per VDA5050 protocol and uses MQTT, as MQTT is the industry standard for a highly efficient, scalable protocol for connecting devices over the internet. VDA 5050 is an open standard for communication between fleets of AGVs/AMRs and a central fleet service.
+  >
+  > -- [Isaac Mission Dispatch](https://github.com/nvidia-isaac/isaac_mission_dispatch)
+- Isaac ROS Mission Client [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_mission_client)]
+  > the ROS 2 packages for Mission Client, which communicates to a robot fleet management service. Mission Client receives tasks and actions from the fleet management service and updates its progress, state, and errors. Mission Client performs navigation actions with Nav2 and can be integrated with other ROS actions.
+  >
+  > -- [Isaac ROS Mission Client](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_mission_client)
+
 ### Miscellaneous
 
 - Isaac Nova Orin [[link](https://developer.nvidia.com/isaac/nova-orin)]  
