@@ -261,6 +261,11 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
+- NVIDIA IGX Orin [[link](https://www.nvidia.com/en-us/edge-computing/products/igx/)]
+  > an industrial-grade, edge AI platform that combines enterprise-level hardware, software, and support. It’s purpose-built for industrial and medical environments, delivering powerful AI compute, high-bandwidth sensor processing, enterprise security, and functional safety. The platform also comes with NVIDIA AI Enterprise and up to 10 years of support, so you can confidently deliver AI safely and securely to support human and machine collaboration.
+  >
+  > -- [NVIDIA IGX Orin](https://www.nvidia.com/en-us/edge-computing/products/igx/)
+
 - OSMO [[link](https://developer.nvidia.com/osmo)]
   > a cloud-native workflow orchestration platform that lets you easily scale your workloads across distributed environments—from on-premises to private and public cloud. It provides a single pane of glass for scheduling complex multi-stage and multi-container heterogeneous computing workflows.
   >
