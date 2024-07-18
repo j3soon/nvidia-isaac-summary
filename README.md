@@ -170,11 +170,20 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > -- [Isaac ROS](https://developer.nvidia.com/isaac-ros) (slightly rephrased)
   - [etc.](https://nvidia-isaac-ros.github.io/repositories_and_packages/index.html)
 
-- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)][[docs](https://nvidia-isaac-ros.github.io/reference_workflows/isaac_manipulator/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_manipulator)]
+- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)][[docs](https://nvidia-isaac-ros.github.io/reference_workflows/isaac_manipulator/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_manipulator)]  
   a collection of Isaac ROS packages for manipulation tasks.  
   > a reference workflow of NVIDIA-accelerated libraries and AI models that enables developers to build AI-enabled robot arms, or manipulators, that can perceive, understand, and interact with their environments.
   >
   > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
+
+  - Extended Robot Description Format (XRDF) [[docs](https://nvidia-isaac-ros.github.io/concepts/manipulation/xrdf.html)]
+    > designed to supplement the URDF by adding specification for: (1) Semantic labeling of configuration space (i.e., c-space) and tool frame(s) to control the robot, (2) Acceleration and jerk limits required to generate smooth motion, (3) Collision spheres to efficiently represent robot geometry, and (4) Masking to regulate self-collision avoidance.
+    >
+    > -- [Extended Robot Description Format (XRDF)](https://nvidia-isaac-ros.github.io/concepts/manipulation/xrdf.html)
+    - Lula Robot Description and XRDF Editor [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_motion_generation_robot_description_editor.html)]
+      > UI tool to generate a configuration file that supplements the information available about a robot in its URDF.
+      >
+      > -- [Lula Robot Description and XRDF Editor](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_motion_generation_robot_description_editor.html)
 
   - (Isaac ROS) cuMotion [[docs](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)]
     > provides CUDA-accelerated manipulation capabilities for robots in ROS 2. It provides two main capabilities: (1) Motion generation for robot arms via integration of cuMotion into MoveIt 2, and (2) Segmentation of robots from depth streams using cuMotion’s kinematics and geometry processing functions to accurately identify and filter out parts of the robot. This allows reconstruction of obstacles in the environment without spurious contributions from the robot itself.
@@ -345,4 +354,4 @@ Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if
 
 I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
-Last updated on 2024/04/26.
+Last updated on 2024/07/18.
