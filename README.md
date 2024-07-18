@@ -74,14 +74,48 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [NVIDIA Replicator Insight](https://developer.nvidia.com/nvidia-omniverse/replicator-insight-eap)
 
-### (Omniverse) Isaac Gym
+### Isaac Lab
 
-- (Omniverse) Isaac Gym [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)][[github](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)]  
-  a light-weight repository based on Isaac Sim that provides a variety of GPU-accelerated reinforcement learning environments and algorithms.  
-  The repository is named as Omniverse Isaac Gym Environments (OIGE), and is released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs/blob/main/LICENSE.txt)).  
-  > an interface for performing reinforcement learning training and inferencing in Isaac Sim.
+- Isaac Lab [[link](https://developer.nvidia.com/isaac-sim#isaac-lab)] [[docs](https://isaac-sim.github.io/IsaacLab/index.html)] [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/isaac_lab_tutorials/index.html)] [[github](https://github.com/isaac-sim/IsaacLab)]  
+  an open-source platform based on Isaac Sim, currently the de facto framework for robot learning in Omniverse.  
+  Formerly _Isaac Orbit_.
+  > a unified and modular framework for robot learning that aims to simplify common workflows in robotics research (such as RL, learning from demonstrations, and motion planning). It is built upon NVIDIA Isaac Sim to leverage the latest simulation capabilities for photo-realistic scenes, and fast and efficient simulation.
   >
-  > -- [NVIDIA Isaac Gym](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)
+  > -- [NVIDIA Isaac Lab](https://isaac-sim.github.io/IsaacLab/index.html)
+
+  For more details on the position of Isaac Lab in the Isaac ecosystem, see the [Isaac Lab FAQ](https://isaac-sim.github.io/IsaacLab/source/setup/faq.html).
+
+- Deprecated Frameworks
+  > Isaac Lab will be replacing previously released frameworks for robot learning and reinformcement learning, including [IsaacGymEnvs](https://github.com/isaac-sim/IsaacGymEnvs) for the [Isaac Gym Preview Release](https://developer.nvidia.com/isaac-gym), [OmniIsaacGymEnvs](https://github.com/isaac-sim/OmniIsaacGymEnvs) for Isaac Sim, and [Orbit](https://isaac-orbit.github.io/orbit/index.html) for Isaac Sim.
+  >
+  > These frameworks are now deprecated in favor of continuing development in Isaac Lab. We encourage current users of these frameworks to migrate your work over to Isaac Lab. Migration guides are available to support the migration process:
+  >
+  > - Migrating from IsaacGymEnvs and Isaac Gym Preview Release: [link](https://isaac-sim.github.io/IsaacLab/source/migration/migrating_from_isaacgymenvs.html)
+  >
+  > - Migrating from OmniIsaacGymEnvs: [link](https://isaac-sim.github.io/IsaacLab/source/migration/migrating_from_omniisaacgymenvs.html)
+  >
+  > - Migrating from Orbit: [link](https://isaac-sim.github.io/IsaacLab/source/migration/migrating_from_orbit.html)
+  >
+  > -- [NVIDIA Isaac Lab](https://docs.omniverse.nvidia.com/isaacsim/latest/isaac_lab_tutorials/index.html#deprecated-frameworks)
+  - Isaac Orbit [[docs](https://isaac-orbit.github.io/orbit/)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/ext_omni_isaac_orbit.html)][[arxiv](https://arxiv.org/abs/2301.04195)][[site](https://isaac-orbit.github.io/)][[github](https://github.com/NVIDIA-Omniverse/Orbit)]  
+    a general repository based on Isaac Sim that features a number of GPU-accelerated simulation environments, a variety of motion generators, integrations with several reinforcement learning libraries, utilities for imitation learning, etc.  
+    Released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/Orbit/blob/main/LICENSE)).
+    > a unified and modular framework for robot learning that aims to simplify common workflows in robotics research (such as RL, learning from demonstrations, and motion planning).
+    >
+    > -- [NVIDIA Isaac Orbit](https://github.com/NVIDIA-Omniverse/Orbit)
+
+    Omniverse Isaac Gym is a light-weight framework focusing on reinforcement learning tasks, while Isaac Orbit is a more general and modular framework that focuses on robotics applications. ([source](https://github.com/NVIDIA-Omniverse/orbit/blob/main/docs/source/setup/faq.rst), [source](https://forums.developer.nvidia.com/t/orbit-vs-omniisaacgymenvs/251329/3))
+
+    Isaac Orbit is now deprecated and will continue evolve as Isaac Lab. ([source](https://isaac-orbit.github.io/))
+
+  - (Omniverse) Isaac Gym [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)][[github](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)]  
+    a light-weight repository based on Isaac Sim that provides a variety of GPU-accelerated reinforcement learning environments and algorithms.  
+    The repository is named as Omniverse Isaac Gym Environments (OIGE), and is released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs/blob/main/LICENSE.txt)).  
+    > an interface for performing reinforcement learning training and inferencing in Isaac Sim.
+    >
+    > -- [NVIDIA Isaac Gym](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)
+
+    The latest release of Omniverse Isaac Gym is 4.0.0, and will not be further updated. ([source](https://github.com/isaac-sim/OmniIsaacGymEnvs))
 
   - Isaac Gym (Preview Release) [[link](https://developer.nvidia.com/isaac-gym)][[github](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)][[arxiv](https://arxiv.org/abs/2108.10470)][[site](https://sites.google.com/view/isaacgym-nvidia)][[youtube](https://youtu.be/nleDq-oJjGk?list=PLq2Xfjf6QzkrgDkQdtEzlnXeUAbTPEXNH)]  
     the predecessor of (Omniverse) Isaac Gym that does not base on Isaac Sim (and Omniverse).  
@@ -97,26 +131,6 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > -- [NVIDIA Isaac Gym](https://developer.nvidia.com/isaac-gym)
 
     The latest release of Isaac Gym (Preview Release) is Preview 4, and will not be further updated.
-
-### Isaac Orbit
-
-- Isaac Orbit [[docs](https://isaac-orbit.github.io/orbit/)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/ext_omni_isaac_orbit.html)][[arxiv](https://arxiv.org/abs/2301.04195)][[site](https://isaac-orbit.github.io/)][[github](https://github.com/NVIDIA-Omniverse/Orbit)]  
-  a general repository based on Isaac Sim that features a number of GPU-accelerated simulation environments, a variety of motion generators, integrations with several reinforcement learning libraries, utilities for imitation learning, etc.  
-  Released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/Orbit/blob/main/LICENSE)).
-  > a unified and modular framework for robot learning that aims to simplify common workflows in robotics research (such as RL, learning from demonstrations, and motion planning).
-  >
-  > -- [NVIDIA Isaac Orbit](https://github.com/NVIDIA-Omniverse/Orbit)
-
-  Omniverse Isaac Gym is a light-weight framework focusing on reinforcement learning tasks, while Isaac Orbit is a more general and modular framework that focuses on robotics applications. ([source](https://github.com/NVIDIA-Omniverse/orbit/blob/main/docs/source/setup/faq.rst), [source](https://forums.developer.nvidia.com/t/orbit-vs-omniisaacgymenvs/251329/3))
-
-  Personally, I think Isaac Orbit is preferred for general usages such as creating custom environments. However, if you are writing a research paper and just want to use built-in Omniverse Isaac Gym Environments for benchmarking, Omniverse Isaac Gym may be enough.
-
-- Isaac Lab [[link](https://developer.nvidia.com/isaac-sim#isaac-lab)]
-  > a lightweight reference application built on the Isaac Sim platform specifically optimized for robot learning and is pivotal for robot foundation model training. Isaac Lab optimizes for reinforcement, imitation, and transfer learning, and is capable of training all types of robot embodiments including the Project GR00T foundation model for humanoids.
-  >
-  > -- [NVIDIA Isaac Lab](https://developer.nvidia.com/isaac-sim#isaac-lab)
-
-  Isaac Lab is built upon Isaac Sim. However, I'm not sure about its relationship with Omniverse Isaac Gym or Isaac Orbit yet.
 
 - Project GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/project-GR00T)]
   > a general-purpose foundation model that promises to transform humanoid robot learning in simulation and the real world. Trained in NVIDIA GPU-accelerated simulation, GR00T enables humanoid embodiments to learn from a handful of human demonstrations with imitation learning and NVIDIA Isaac Lab for reinforcement learning, as well as generating robot movements from video data. The GR00T model takes multimodal instructions and past interactions as input and produces the actions for the robot to execute.
