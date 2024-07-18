@@ -149,6 +149,8 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
   In legacy robotics deployment systems, ROS1 is commonly used but [lacks support for key use cases](https://design.ros2.org/articles/why_ros2.html) such as multi-robot systems, real-time systems, and production-ready environments. Therefore, ROS2 was developed to address these issues. However, using ROS2 can still present challenges, such as reproducibility across different systems and efficient GPU communication between ROS nodes. Isaac ROS, a collection of GPU-accelerated ROS2 packages and pipelines, addresses these challenges by (1) adopting a workflow based on the [NVIDIA Container Toolkit](https://github.com/NVIDIA/nvidia-container-toolkit) (previously NVIDIA Docker) to ensure reproducibility across systems, allowing near-identical deployment experiences across systems with x86 and ARM CPUs, and (2) enabling efficient GPU communication between ROS nodes by reducing memory copies between GPUs and CPUs through [NITROS](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros).
 
+  Mainstream robotics applications can be roughly categorized into manipulation and navigation tasks. To address these tasks, Isaac Manipulator and Isaac Perceptor were developed as reference workflows. These workflows will be described in detail below.
+
   The term `Isaac ROS` refer to the packages for ROS 2, instead of Isaac SDK. Isaac ROS should not be confused with the `ROS & ROS 2 Bridges` in Isaac Sim, or the `ROS Bridge` in Isaac SDK.  
   The packages (i.e., Isaac GEMs) are named as `Isaac ROS <Package_Name>`. Unfortunately, ambiguous terms such as `Isaac Elbrus` still exist ([source](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam)). Since the Elbrus package exist in both Isaac ROS and Isaac SDK, Elbrus should be refered to as `Isaac ROS Elbrus` for preciseness.  
 
@@ -167,6 +169,42 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     >
     > -- [Isaac ROS](https://developer.nvidia.com/isaac-ros) (slightly rephrased)
   - [etc.](https://nvidia-isaac-ros.github.io/repositories_and_packages/index.html)
+
+- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)] [[docs](https://nvidia-isaac-ros.github.io/reference_workflows/isaac_manipulator/index.html)] [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_manipulator)]
+  a collection of Isaac ROS packages for manipulation tasks.  
+  > a reference workflow of NVIDIA-accelerated libraries and AI models that enables developers to build AI-enabled robot arms, or manipulators, that can perceive, understand, and interact with their environments.
+  >
+  > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
+
+  - (Isaac ROS) cuMotion [[docs](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)] [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)]
+    > provides CUDA-accelerated manipulation capabilities for robots in ROS 2. It provides two main capabilities: (1) Motion generation for robot arms via integration of cuMotion into MoveIt 2, and (2) Segmentation of robots from depth streams using cuMotion’s kinematics and geometry processing functions to accurately identify and filter out parts of the robot. This allows reconstruction of obstacles in the environment without spurious contributions from the robot itself.
+    >
+    > -- [Isaac ROS cuMotion](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)
+
+    - cuRobo [[link](https://curobo.org/)][[docs](https://curobo.org/)][[github](https://github.com/NVlabs/curobo)]
+      > a CUDA accelerated library containing a suite of robotics algorithms that run significantly faster than existing implementations leveraging parallel compute.
+      >
+      > -- [NVIDIA cuRobo](https://github.com/NVlabs/curobo)
+
+      cuRobo is shipped as Isaac ROS cuMotion for ROS2 integration. ([source](https://curobo.org/))
+
+      - cuRobo with Isaac Sim [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_advanced_curobo.html)]
+
+- Isaac Perceptor [[link](https://developer.nvidia.com/isaac/perceptor)] [[docs](https://nvidia-isaac-ros.github.io/reference_workflows/isaac_perceptor/index.html)] [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_perceptor)]  
+  a collection of Isaac ROS packages for autonomous mobile robots (AMRs).  
+  Formerly _Isaac for AMRs_ and _Isaac AMR_.
+  > a reference workflow of NVIDIA-accelerated libraries and AI models that helps you quickly build robust autonomous mobile robots (AMRs) to perceive, localize, and operate in unstructured environments like warehouses or factories.
+  >
+  > -- [NVIDIA Isaac Perceptor](https://developer.nvidia.com/isaac/perceptor)
+
+- Isaac AMR (before Isaac Perceptor) [[link](https://docs.nvidia.com/isaac/doc/index.html)]  
+  > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
+  >
+  > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
+  >
+  > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
+
+  Personally, I think Isaac AMR is an extension of Isaac SDK. This is based on the Isaac Sight UI screenshots in [source](https://docs.nvidia.com/isaac/doc/extensions/navigation_stack/doc/navigation_stack_on_isaac_sim.html), and I've noticed some Isaac SDK docs have been redirected/moved to Isaac AMR docs.
 
 - Isaac SDK [[docs](https://docs.nvidia.com/isaac/archive/2021.1/doc/index.html)]  
   a toolkit for deploying GPU-accelerated algorithms on physical robots.
@@ -198,43 +236,6 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > a feature-rich framework for building modular robotics applications.
     >
     > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-engine)
-
-- Isaac Manipulator [[link](https://developer.nvidia.com/isaac/manipulator)]
-  > a collection of foundation models and modular GPU-accelerated libraries that help build scalable and repeatable workflows for dynamic manipulation tasks by accelerating AI model training and task (re)programming. It’s revolutionizing how robotics software developers can leverage customized software components for specific tasks such as machine tending, assembly tasks, etc., enabling manipulation arms to seamlessly perceive and interact with their surroundings.
-  >
-  > -- [NVIDIA Isaac Manipulator](https://developer.nvidia.com/isaac/manipulator)
-
-  Personally, I think these GPU-accelerated packages would be released as Isaac ROS packages in the future. For an example, the cuRobo library may be packaged as a cuMotion ROS 2 package. This means we can expect more versatile and powerful Isaac ROS packages than currently released packages such as [Isaac ROS Pose Estimation](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/index.html) for manipulation tasks.
-
-  The developer preview is planned for Q2, 2024. ([source](https://developer.nvidia.com/isaac/manipulator))
-
-- cuRobo [[link](https://curobo.org/)][[github](https://github.com/NVlabs/curobo)]
-  > a CUDA accelerated library containing a suite of robotics algorithms that run significantly faster than existing implementations leveraging parallel compute.
-  >
-  > -- [NVIDIA cuRobo](https://github.com/NVlabs/curobo)
-
-  cuRobo is shipping as NVIDIA cuMotion with NVIDIA Isaac Manipulator in Q2 2024. ([source](https://curobo.org/))
-
-  - cuRobo with Isaac Sim [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_advanced_curobo.html)]
-
-- Isaac Perceptor [[link](https://developer.nvidia.com/isaac/perceptor)]  
-  Formerly _Isaac for AMRs_ and _Isaac AMR_.
-  > a collection of hardware-accelerated packages for visual AI, tailored for Autonomous Mobile Robot (AMR) to perceive, localize, and operate robustly in unstructured environments. Robotics software developers can now easily access turnkey AI-based perception capabilities, ensuring reliable operations and obstacle detection in complex scenarios.
-  >
-  > -- [NVIDIA Isaac Perceptor](https://developer.nvidia.com/isaac/perceptor)
-
-  Personally, I think these GPU-accelerated packages would be released as Isaac ROS packages in the future. This means we can expect more versatile and powerful Isaac ROS packages than currently released packages such as [Isaac ROS Nvblox](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/index.html) for navigation tasks.
-
-  The developer preview is planned for Q2, 2024. ([source](https://developer.nvidia.com/isaac/perceptor))
-
-- Isaac AMR (before Isaac Perceptor) [[link](https://docs.nvidia.com/isaac/doc/index.html)]  
-  > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
-  >
-  > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
-  >
-  > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
-
-  Personally, I think Isaac AMR is an extension of Isaac SDK. This is based on the Isaac Sight UI screenshots in [source](https://docs.nvidia.com/isaac/doc/extensions/navigation_stack/doc/navigation_stack_on_isaac_sim.html), and I've noticed some Isaac SDK docs have been redirected/moved to Isaac AMR docs.
 
 ### Mission Dispatch and Client
 
