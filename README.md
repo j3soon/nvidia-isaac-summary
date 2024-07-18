@@ -323,7 +323,15 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 - [Isaac Sim: Extensions API](https://docs.omniverse.nvidia.com/py/isaacsim/index.html)
 - [Isaac Examples Menu](https://docs.omniverse.nvidia.com/isaacsim/latest/reference_material/menu_examples.html) (in UI through Extensions)
 - [Tips & Useful Links](https://docs.omniverse.nvidia.com/isaacsim/latest/reference_material/reference_tips.html)
-- Search under `~/.local/share/ov/pkg/isaac_sim-2023.1.1` for example API usages.
+
+### Development Notes
+
+- For VSCode Intellisense to work, you need to:
+  - Correctly link the Omniverse app directories ([ref](https://github.com/NVIDIA-Omniverse/kit-extension-template?tab=readme-ov-file#linking-with-an-omniverse-app), [ref](https://github.com/j3soon/omni-nerf-extension?tab=readme-ov-file#development-notes))
+  - Correctly set the VSCode settings `.vscode/settings.json` ([ref](https://github.com/NVIDIA-Omniverse/kit-extension-template/blob/main/.vscode/settings.json), [ref](https://github.com/j3soon/omni-nerf-extension/blob/master/extension/.vscode/settings.json))
+  - Select the correct Python interpreter (e.g., the `isaac-sim` virtual environment if you are using [Isaac Sim with Anaconda](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_python.html#advanced-running-with-anaconda))
+- Built-in Examples under `~/.local/share/ov/pkg/*`
+  - Search under `~/.local/share/ov/pkg/isaac-sim-4.0.0` for example API usages.
 
 ## Epilogue
 
