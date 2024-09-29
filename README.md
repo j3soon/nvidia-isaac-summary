@@ -154,14 +154,19 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   The term `Isaac ROS` refer to the packages for ROS 2, instead of Isaac SDK. Isaac ROS should not be confused with the `ROS & ROS 2 Bridges` in Isaac Sim, or the `ROS Bridge` in Isaac SDK.  
   The packages (i.e., Isaac GEMs) are named as `Isaac ROS <Package_Name>`. Unfortunately, ambiguous terms such as `Isaac Elbrus` still exist ([source](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam)). Since the Elbrus package exist in both Isaac ROS and Isaac SDK, Elbrus should be refered to as `Isaac ROS Elbrus` for preciseness.  
 
-  Before starting, please make sure your PC/Jetson hardware and software meet the [system requirements](https://nvidia-isaac-ros.github.io/getting_started/index.html#system-requirements). After checking the requirements, I suggest you start from the Nvblox tutorial below.
+  To get started quickly, follow these steps:
+
+  1. Ensure your PC/Jetson hardware and operating system meet the [system requirements](https://nvidia-isaac-ros.github.io/getting_started/index.html#system-requirements).
+  2. Set up your [system environment](https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/compute/index.html).
+  3. Configure your [development environment](https://nvidia-isaac-ros.github.io/getting_started/dev_env_setup.html).
+  4. (Optional) To feel the power of Isaac ROS, simply follow the [Nvblox tutorial](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/isaac_ros_nvblox/index.html#quickstart) for a quick introduction.
+
+  Some of the Isaac ROS packages are listed below:
 
   - (Isaac ROS) Nvblox [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)]
     > processes depth and pose to reconstruct a 3D scene in real-time and outputs a 2D costmap for Nav2. The costmap is used in planning during navigation as a vision-based solution to avoid obstacles.
     >
     > -- [Isaac ROS Nvblox](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)
-
-    You can quickly experience the power of Isaac ROS by simply following the [the quick start guide](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/isaac_ros_nvblox/index.html#quickstart) of Nvblox.
 
     This packages includes the use of the [Isaac ROS Visual SLAM](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_visual_slam) package, which uses [cuVSLAM](https://nvidia-isaac-ros.github.io/concepts/visual_slam/cuvslam/index.html) as the underlying algorithm.
   - (Isaac ROS) NVIDIA Isaac for Transport for ROS (NITROS) [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nitros)]
