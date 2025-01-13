@@ -344,6 +344,24 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 - [Isaac Examples Menu](https://docs.omniverse.nvidia.com/isaacsim/latest/reference_material/menu_examples.html) (in UI through Extensions)
 - [Tips & Useful Links](https://docs.omniverse.nvidia.com/isaacsim/latest/reference_material/reference_tips.html)
 
+### OmniGraph Coding References
+
+- `omni.graph.nodes`
+  - [Standard Nodes \| Kit](https://docs.omniverse.nvidia.com/kit/docs/omni.graph.nodes/latest/Overview.html)
+  - [OmniGraph Node Library \| Omniverse Extensions](https://docs.omniverse.nvidia.com/extensions/latest/ext_omnigraph/node-library/node-library.html)
+- `omni.graph.action_nodes`
+  - [Action Graph Nodes \| Kit](https://docs.omniverse.nvidia.com/kit/docs/omni.graph.action_nodes/latest/Overview.html)
+- `omni.isaac.core_nodes`
+  - [Core Omnigraph Nodes \| Isaac Sim](https://docs.omniverse.nvidia.com/py/isaacsim/source/extensions/omni.isaac.core_nodes/docs/index.html)
+- `omni.isaac.ros2_bridge`
+  - [ROS2 Bridge \| Isaac Sim](https://docs.omniverse.nvidia.com/py/isaacsim/source/extensions/omni.isaac.ros2_bridge/docs/index.html)
+- Custom Nodes
+  - [Creating Python Nodes \| Kit](https://docs.omniverse.nvidia.com/kit/docs/omni.graph.docs/latest/dev/CreatingPythonNodes.html)
+  - [Script Node \| Kit](https://docs.omniverse.nvidia.com/kit/docs/omni.graph.scriptnode/latest/GeneratedNodeDocumentation/OgnScriptNode.html)
+  - [Omnigraph: Custom Python Nodes \| Isaac Sim](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_advanced_omnigraph_custom_python_nodes.html)
+
+You can also hover your cursor on the OmniGraph node title to see its namespace and node name through the Isaac Sim GUI.
+
 ### Development Notes
 
 - For VSCode Intellisense to work, you need to:
