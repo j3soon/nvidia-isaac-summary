@@ -1,6 +1,8 @@
 # NVIDIA Isaac Summary
 
-A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
+An unofficial summary of NVIDIA Isaac.
+
+The following is a list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
 ## Component Descriptions
 
@@ -18,11 +20,11 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac](https://developer.nvidia.com/isaac)
 
-  Isaac stands as NVIDIA's GPU-accelerated solution for robotics, which refers to the robotics platform instead of a specific software component. Alongside essential tools for general AI applications (such as TensorRT, TAO Toolkit, and Triton Inference Server), NVIDIA Isaac components can be categorized into two main branches: (1) Isaac Sim (including Isaac Gym, Isaac Orbit, etc.) for simulation, which currently requires x86 CPUs and RTX GPUs for acceleration. (2) Isaac ROS for deployment, which can run on both PCs (x86 CPUs) and on Jetson hardware (ARM CPUs).
+  Isaac stands as NVIDIA's GPU-accelerated solution for robotics, which refers to the robotics platform instead of a specific software component. Alongside essential tools for general AI applications (such as TensorRT, TAO Toolkit, and Triton Inference Server), NVIDIA Isaac components can be categorized into two main branches: (1) Isaac Sim (including Isaac Gym, Isaac Orbit, etc.) for simulation, which currently [requires x86 CPUs and RTX GPUs](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/requirements.html) for acceleration. (2) Isaac ROS for deployment, which can run on both PCs (x86 CPUs) and on Jetson hardware (ARM CPUs).
 
 ### (Omniverse) Isaac Sim
 
-- (Omniverse) Isaac Sim [[link](https://developer.nvidia.com/isaac-sim)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/overview.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-OV-01+V1/)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+S-OV-03+V1/)][[youtube](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)]  
+- (Omniverse) Isaac Sim [[link](https://developer.nvidia.com/isaac-sim)][[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-OV-01+V1/)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+S-OV-03+V1/)][[youtube](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)]  
   a robotics simulation toolkit based on Omniverse.
   > a scalable robotics simulation application and synthetic data-generation tool that powers photorealistic, physically accurate virtual environments.
   >
@@ -32,9 +34,19 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
   Technically, Isaac Sim is an app built upon Omniverse Kit, which is a SDK for building apps upon the Omniverse platform. The simulation is accelerated by PhysX, while the scene is rendered through RTX rendering.  
 
-  Isaac Sim can be downloaded through [Omniverse Launcher](https://www.nvidia.com/en-us/omniverse/download/) here:
-  - [Linux](https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage)
-  - [Windows](https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe)
+  To install Isaac Sim, follow one of the following methods:
+
+  1. Install with [Omniverse Launcher](https://www.nvidia.com/en-us/omniverse/download/):
+     - Download [Omniverse Launcher (Linux)](https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage)
+     - Download [Omniverse Launcher (Windows)](https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe)
+  2. Pre-built Docker Container:  
+     Docker containers are especially useful for quickly testing the software without the need to install it on the host system. However, Ubuntu is required for this. (I haven't tested it on WSL 2)
+     - [Container Installation](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_container.html)
+     - [Launch with GUI Enabled](https://github.com/j3soon/isaac-extended/tree/master?tab=readme-ov-file#docker-container-with-display)
+  3. Install with PIP (Experimental):
+     - [Python Environment Installation](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_python.html)
+
+  Alternatively, if you are using
 
   The assets are accessed through [Omniverse Nucleus](https://docs.omniverse.nvidia.com/nucleus/latest/index.html), which requires setting up a (local) Nucleus account. In addition, installing [Omniverse Cache](https://docs.omniverse.nvidia.com/prod_utilities/prod_utilities/cache/overview.html) can speed up the access to Nucleus. If no custom assets are used, the built-in assets can be accessed through the default remote Nucleus server.
   - Isaac Sim Unity3D [[docs](https://docs.nvidia.com/isaac/archive/2020.1/doc/simulation/unity3d.html)]  
@@ -42,11 +54,11 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > allows you to use Unity3D as the simulation environment for Isaac robotics.
     >
     > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2020.1/doc/simulation/unity3d.html)
-  - ROS & ROS 2 Bridges [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_ros_turtlebot.html)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_ros2_turtlebot.html)]
+  - ROS & ROS 2 Bridges [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)][[tutorials](https://docs.omniverse.nvidia.com/isaacsim/latest/ros_ros2_tutorials.html)]
     > tools to facilitate integration with ROS systems.
     >
     > -- [NVIDIA Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_ros_turtlebot.html)
-  - Isaac Cortex [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_cortex_1_overview.html)]  
+  - Isaac Cortex [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/cortex_tutorials/tutorial_cortex_1_overview.html)]  
     A behavior programming tool.
     > enables programming task awareness and adaptive decision making into robots, and easily switching between simulation and reality.
     >
@@ -83,18 +95,18 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   >
   > -- [NVIDIA Isaac Lab](https://isaac-sim.github.io/IsaacLab/index.html)
 
-  For more details on the position of Isaac Lab in the Isaac ecosystem, see the [Isaac Lab FAQ](https://isaac-sim.github.io/IsaacLab/source/setup/faq.html).
+  For more details on the position of Isaac Lab in the Isaac ecosystem, see the [Isaac Lab FAQ](https://isaac-sim.github.io/IsaacLab/main/source/setup/faq.html).
 
 - Deprecated Frameworks
   > Isaac Lab will be replacing previously released frameworks for robot learning and reinformcement learning, including [IsaacGymEnvs](https://github.com/isaac-sim/IsaacGymEnvs) for the [Isaac Gym Preview Release](https://developer.nvidia.com/isaac-gym), [OmniIsaacGymEnvs](https://github.com/isaac-sim/OmniIsaacGymEnvs) for Isaac Sim, and [Orbit](https://isaac-orbit.github.io/orbit/index.html) for Isaac Sim.
   >
   > These frameworks are now deprecated in favor of continuing development in Isaac Lab. We encourage current users of these frameworks to migrate your work over to Isaac Lab. Migration guides are available to support the migration process:
   >
-  > - Migrating from IsaacGymEnvs and Isaac Gym Preview Release: [link](https://isaac-sim.github.io/IsaacLab/source/migration/migrating_from_isaacgymenvs.html)
+  > - Migrating from IsaacGymEnvs and Isaac Gym Preview Release: [link](https://isaac-sim.github.io/IsaacLab/main/source/migration/migrating_from_isaacgymenvs.html)
   >
-  > - Migrating from OmniIsaacGymEnvs: [link](https://isaac-sim.github.io/IsaacLab/source/migration/migrating_from_omniisaacgymenvs.html)
+  > - Migrating from OmniIsaacGymEnvs: [link](https://isaac-sim.github.io/IsaacLab/main/source/migration/migrating_from_omniisaacgymenvs.html)
   >
-  > - Migrating from Orbit: [link](https://isaac-sim.github.io/IsaacLab/source/migration/migrating_from_orbit.html)
+  > - Migrating from Orbit: [link](https://isaac-sim.github.io/IsaacLab/main/source/migration/migrating_from_orbit.html)
   >
   > -- [NVIDIA Isaac Lab](https://docs.omniverse.nvidia.com/isaacsim/latest/isaac_lab_tutorials/index.html#deprecated-frameworks)
   - Isaac Orbit [[docs](https://isaac-orbit.github.io/orbit/)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/ext_omni_isaac_orbit.html)][[arxiv](https://arxiv.org/abs/2301.04195)][[site](https://isaac-orbit.github.io/)][[github](https://github.com/NVIDIA-Omniverse/Orbit)]  
@@ -108,9 +120,9 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
     Isaac Orbit is now deprecated and will continue evolve as Isaac Lab. ([source](https://isaac-orbit.github.io/))
 
-  - (Omniverse) Isaac Gym [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)][[github](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs)]  
+  - (Omniverse) Isaac Gym [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)][[github](https://github.com/isaac-sim/OmniIsaacGymEnvs)]  
     a light-weight repository based on Isaac Sim that provides a variety of GPU-accelerated reinforcement learning environments and algorithms.  
-    The repository is named as Omniverse Isaac Gym Environments (OIGE), and is released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/OmniIsaacGymEnvs/blob/main/LICENSE.txt)).  
+    The repository is named as Omniverse Isaac Gym Environments (OIGE), and is released under the BSD 3-Clause License ([source](https://github.com/isaac-sim/OmniIsaacGymEnvs/blob/main/LICENSE.txt)).  
     > an interface for performing reinforcement learning training and inferencing in Isaac Sim.
     >
     > -- [NVIDIA Isaac Gym](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)
@@ -132,16 +144,16 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
     The latest release of Isaac Gym (Preview Release) is Preview 4, and will not be further updated.
 
-- Project GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/project-GR00T)]
-  > a general-purpose foundation model that promises to transform humanoid robot learning in simulation and the real world. Trained in NVIDIA GPU-accelerated simulation, GR00T enables humanoid embodiments to learn from a handful of human demonstrations with imitation learning and NVIDIA Isaac Lab for reinforcement learning, as well as generating robot movements from video data. The GR00T model takes multimodal instructions and past interactions as input and produces the actions for the robot to execute.
+- Project GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/project-GR00T)] [[blog](https://developer.nvidia.com/blog/advancing-humanoid-robot-sight-and-skill-development-with-nvidia-project-gr00t)]
+  > a research initiative and development platform for general-purpose robot foundation models and data pipelines to accelerate humanoid robotics.
   >
   > -- [NVIDIA Project GR00T](https://developer.nvidia.com/project-GR00T)
 
-  The GR00T model refers to a general-purpose foundation model for humanoid robots trained in Isaac Lab with imitation learning and reinforcement learning.
+  The GR00T workflows include GR00T-Teleop, GR00T-Mimic, GR00T-Gen, GR00T-Dexterity, GR00T-Mobility, GR00T-Control, and GR00T-Perception.
 
 ### Isaac ROS
 
-- Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://nvidia-isaac-ros.github.io/getting_started/index.html)]  
+- Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://nvidia-isaac-ros.github.io/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/isaac/containers/ros)]  
   a collection of GPU-accelerated ROS2 packages (i.e., Isaac GEMs) and pipelines.  
   > a collection of hardware-accelerated packages that make it easier for ROS developers to build high-performance solutions on NVIDIA hardware.
   >
@@ -156,7 +168,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
   To get started quickly, follow these steps:
 
-  1. Ensure your PC/Jetson hardware and operating system meet the [system requirements](https://nvidia-isaac-ros.github.io/getting_started/index.html#system-requirements).
+  1. Ensure your PC/Jetson hardware and operating system meet the [system requirements](https://nvidia-isaac-ros.github.io/getting_started/index.html#system-requirements). For setting up your Jetson environment, please refer to [the Jetson section](#jetson).
   2. Set up your [system environment](https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/compute/index.html).
   3. Configure your [development environment](https://nvidia-isaac-ros.github.io/getting_started/dev_env_setup.html).
   4. (Optional) To feel the power of Isaac ROS, simply follow the [Nvblox tutorial](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_nvblox/isaac_ros_nvblox/index.html#quickstart) for a quick introduction.
@@ -253,7 +265,7 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
 
 ### Mission Dispatch and Client
 
-- Isaac Mission Dispatch [[github](https://github.com/nvidia-isaac/isaac_mission_dispatch)]
+- Isaac Mission Dispatch [[github](https://github.com/nvidia-isaac/isaac_mission_dispatch)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/isaac/containers/mission-dispatch)]
   > a cloud service that enables the communication between edge robots and other cloud services responsible for managing a fleet of robots. The communication between Mission Dispatch and robots is designed per VDA5050 protocol and uses MQTT, as MQTT is the industry standard for a highly efficient, scalable protocol for connecting devices over the internet. VDA 5050 is an open standard for communication between fleets of AGVs/AMRs and a central fleet service.
   >
   > -- [Isaac Mission Dispatch](https://github.com/nvidia-isaac/isaac_mission_dispatch)
@@ -300,9 +312,10 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
     > -- [NVIDIA Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/logistics_tutorial_cuopt.html)
 
 - Omniverse Cloud [[link](https://www.nvidia.com/en-us/omniverse/cloud/)]
-  > a platform of APIs, SDKs, and services available within a full-stack cloud environment for enterprise developers to easily integrate Universal Scene Description (OpenUSD) and RTX rendering technologies into their 3D industrial digitalization applications.
+  > a platform of APIs and microservices enabling developers to easily integrate Universal Scene Description (OpenUSD) and RTX rendering and sensor simulation technologies into industrial digitalization and perception AI workflows and applications.
   >
   > -- [NVIDIA Omniverse Cloud](https://www.nvidia.com/en-us/omniverse/cloud/)
+  Including Omniverse Cloud Sensor RTX APIs and others.
 
 - Omniverse Farm [[docs](https://docs.omniverse.nvidia.com/farm/latest/index.html)]
   > Omniverse Farm Queue and Omniverse Farm Agent allow you to run tasks in the background, and to run automated jobs defined by you or others.
@@ -310,6 +323,13 @@ A list of NVIDIA Isaac components. [[link](https://developer.nvidia.com/isaac)]
   > -- [NVIDIA Omniverse Farm](https://docs.omniverse.nvidia.com/farm/latest/index.html)
 
   Omniverse Farm is actually flexible enough to run arbitrary tasks, not just rendering tasks. See the [j3soon/omni-farm-isaac](https://github.com/j3soon/omni-farm-isaac) repository for more information.
+
+- Mega [[blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)]
+  > an Omniverse Blueprint for developing, testing and optimizing physical AI and robot fleets at scale in a digital twin before deployment into real-world facilities.
+  >
+  > -- [NVIDIA Blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)
+
+- NVIDIA NIMs and Blueprints for Simulation [[link](https://build.nvidia.com/explore/simulation)]
 
 ## Coding References
 
@@ -365,15 +385,20 @@ You can also hover your cursor on the OmniGraph node title to see its namespace 
 ### Development Notes
 
 - For VSCode Intellisense to work, you need to:
-  - Correctly link the Omniverse app directories ([ref](https://github.com/NVIDIA-Omniverse/kit-extension-template?tab=readme-ov-file#linking-with-an-omniverse-app), [ref](https://github.com/j3soon/omni-nerf-extension?tab=readme-ov-file#development-notes))
-  - Correctly set the VSCode settings `.vscode/settings.json` ([ref](https://github.com/NVIDIA-Omniverse/kit-extension-template/blob/main/.vscode/settings.json), [ref](https://github.com/j3soon/omni-nerf-extension/blob/master/extension/.vscode/settings.json))
-  - Select the correct Python interpreter (e.g., the `isaac-sim` virtual environment if you are using [Isaac Sim with Anaconda](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_python.html#advanced-running-with-anaconda))
+  - Omniverse Kit Extension
+    - Correctly link the Omniverse app directories ([ref](https://github.com/NVIDIA-Omniverse/kit-extension-template?tab=readme-ov-file#linking-with-an-omniverse-app), [ref](https://github.com/j3soon/omni-nerf-extension?tab=readme-ov-file#development-notes))
+    - Correctly set the VSCode settings `.vscode/settings.json` ([ref](https://github.com/NVIDIA-Omniverse/kit-extension-template/blob/main/.vscode/settings.json), [ref](https://github.com/j3soon/omni-nerf-extension/blob/master/extension/.vscode/settings.json))
+    - Select the correct Python interpreter (e.g., the `isaac-sim` virtual environment if you are using [Isaac Sim with Anaconda](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_python.html#advanced-running-with-anaconda))
+  - Isaac Lab
+    - Correctly link the Isaac Sim directories ([ref](https://isaac-sim.github.io/IsaacLab/main/source/overview/developer-guide/vs_code.html), [ref](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/binaries_installation.html#creating-the-isaac-sim-symbolic-link))
+    - Correctly set the VSCode settings `.vscode/settings.json` ([ref](https://github.com/isaac-sim/IsaacLab/blob/main/.vscode/tools/setup_vscode.py))
+    - Select the correct Python interpreter (e.g., the `isaac-sim` virtual environment if you are using [Isaac Lab with Anaconda](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/binaries_installation.html#setting-up-the-conda-environment-optional))
 - Built-in Examples under `~/.local/share/ov/pkg/*`
-  - Search under `~/.local/share/ov/pkg/isaac-sim-4.0.0` for example API usages.
+  - Search under `~/.local/share/ov/pkg/isaac-sim-4.2.0` for example API usages.
 
 ## Epilogue
 
-Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if you have spotted any errors or have questions regarding this document. For questions regarding the Isaac components, I recommend first going through the [Known Issues](https://docs.omniverse.nvidia.com/isaacsim/latest/known_issues.html), then considering asking in the [NVIDIA Developer Forums](https://forums.developer.nvidia.com/) under the [Isaac topic](https://forums.developer.nvidia.com/c/isaac-sdk/15).
+Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if you have spotted any errors or have questions regarding this document. For questions regarding the Isaac components, I recommend first going through the [Known Issues of Isaac Sim](https://docs.omniverse.nvidia.com/isaacsim/latest/known_issues.html), [Known Issues of Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/source/refs/issues.html), [Troubleshooting Guide for Isaac ROS](https://nvidia-isaac-ros.github.io/troubleshooting/index.html), then considering asking in the [NVIDIA Developer Forums](https://forums.developer.nvidia.com/) under the [Isaac topic](https://forums.developer.nvidia.com/c/isaac-sdk/15).
 
 I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
