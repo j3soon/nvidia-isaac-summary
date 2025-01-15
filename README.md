@@ -300,7 +300,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   OSMO refers to an orchestration platform, which can take a workflow spec and run the specified workloads on Omniverse Cloud or DGX Cloud.
 
-- cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
+- cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[nim](https://build.nvidia.com/nvidia/nvidia-cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
   a GPU-accelerated solver for [vehicle routing problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem).  
   Formerly _ReOpt_.
   > a GPU-accelerated logistics solver that uses heuristics and optimizations to calculate complex vehicle routing problem variants with a wide range of constraints.
@@ -323,6 +323,21 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > -- [NVIDIA Omniverse Farm](https://docs.omniverse.nvidia.com/farm/latest/index.html)
 
   Omniverse Farm is actually flexible enough to run arbitrary tasks, not just rendering tasks. See the [j3soon/omni-farm-isaac](https://github.com/j3soon/omni-farm-isaac) repository for more information.
+
+- Cosmos [[link](https://www.nvidia.com/en-us/ai/cosmos/)][[docs](https://developer.nvidia.com/cosmos)][[paper](https://arxiv.org/abs/2501.03575)][[blog](https://blogs.nvidia.com/blog/cosmos-world-foundation-models)][[youtube](https://youtu.be/9Uch931cDx8)]
+  > a platform of state-of-the-art generative world foundation models (WFM), advanced tokenizers, guardrails, and an accelerated data processing and curation pipeline built to accelerate the development of physical AI systems such as autonomous vehicles (AVs) and robots.
+  >
+  > -- [NVIDIA Cosmos](https://www.nvidia.com/en-us/ai/cosmos/)
+  - Cosmos Models [[github](https://github.com/NVIDIA/Cosmos)]
+    - Cosmos Diffusion Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/diffusion/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-diffusion-7b)]
+      > Pre-trained Diffusion-based world foundation models for Text2World and Video2World generation
+    - Cosmos Autoregressive Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/autoregressive/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-autoregressive-5b)]
+      > Pre-trained Autoregressive-based world foundation models for Video2World generation
+  - Cosmos Tokenizer [[github](https://github.com/NVIDIA/Cosmos-Tokenizer)][[youtube](https://youtu.be/Soy_myOfWIU)]
+    > a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators.
+    >
+    > -- [Cosmos Tokenizer](https://github.com/NVIDIA/Cosmos-Tokenizer)
+  - Other pipeline components such as Cosmos Guardrail, Cosmos PromptUpsampler, Cosmos Diffusion Decoder, and Pre-training and post-training scripts via NeMo framework.
 
 - Mega [[blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)]
   > an Omniverse Blueprint for developing, testing and optimizing physical AI and robot fleets at scale in a digital twin before deployment into real-world facilities.
@@ -402,4 +417,4 @@ Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if
 
 I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
-Last updated on 2024/07/18.
+Last updated on 2025/01/15.
