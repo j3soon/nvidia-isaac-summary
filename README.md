@@ -48,11 +48,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   The assets are accessed through [Omniverse Nucleus](https://docs.omniverse.nvidia.com/nucleus/latest/index.html), which requires setting up a (local) Nucleus account. In addition, installing [Omniverse Cache](https://docs.omniverse.nvidia.com/prod_utilities/prod_utilities/cache/overview.html) can speed up the access to Nucleus. If no custom assets are used, the built-in assets can be accessed through the default remote Nucleus server.
 
-  - Isaac Sim Unity3D [[docs](https://docs.nvidia.com/isaac/archive/2020.1/doc/simulation/unity3d.html)]  
-    Unity3D support has been deprecated ([source](https://forums.developer.nvidia.com/t/no-isaac-sim-unity3d-to-download/212951)). The term `Isaac Sim` now refer to the Omniverse-based version.
-    > allows you to use Unity3D as the simulation environment for Isaac robotics.
-    >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2020.1/doc/simulation/unity3d.html)
+  - (Deprecated) [Isaac Sim Unity3D](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-sim-unity3d).
 
   - ROS & ROS 2 Bridges [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)][[tutorials](https://docs.omniverse.nvidia.com/isaacsim/latest/ros_ros2_tutorials.html)]
     > tools to facilitate integration with ROS systems.
@@ -103,53 +99,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   For more details on the position of Isaac Lab in the Isaac ecosystem, see the [Isaac Lab FAQ](https://isaac-sim.github.io/IsaacLab/main/source/setup/faq.html).
 
-- Deprecated Frameworks
-  > Isaac Lab will be replacing previously released frameworks for robot learning and reinformcement learning, including [IsaacGymEnvs](https://github.com/isaac-sim/IsaacGymEnvs) for the [Isaac Gym Preview Release](https://developer.nvidia.com/isaac-gym), [OmniIsaacGymEnvs](https://github.com/isaac-sim/OmniIsaacGymEnvs) for Isaac Sim, and [Orbit](https://isaac-orbit.github.io/orbit/index.html) for Isaac Sim.
-  >
-  > These frameworks are now deprecated in favor of continuing development in Isaac Lab. We encourage current users of these frameworks to migrate your work over to Isaac Lab. Migration guides are available to support the migration process:
-  >
-  > - Migrating from IsaacGymEnvs and Isaac Gym Preview Release: [link](https://isaac-sim.github.io/IsaacLab/main/source/migration/migrating_from_isaacgymenvs.html)
-  >
-  > - Migrating from OmniIsaacGymEnvs: [link](https://isaac-sim.github.io/IsaacLab/main/source/migration/migrating_from_omniisaacgymenvs.html)
-  >
-  > - Migrating from Orbit: [link](https://isaac-sim.github.io/IsaacLab/main/source/migration/migrating_from_orbit.html)
-  >
-  > -- [NVIDIA Isaac Lab](https://docs.omniverse.nvidia.com/isaacsim/latest/isaac_lab_tutorials/index.html#deprecated-frameworks)
-
-  - Isaac Orbit [[docs](https://isaac-orbit.github.io/orbit/)][[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/ext_omni_isaac_orbit.html)][[arxiv](https://arxiv.org/abs/2301.04195)][[site](https://isaac-orbit.github.io/)][[github](https://github.com/NVIDIA-Omniverse/Orbit)]  
-    a general repository based on Isaac Sim that features a number of GPU-accelerated simulation environments, a variety of motion generators, integrations with several reinforcement learning libraries, utilities for imitation learning, etc.  
-    Released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/Orbit/blob/main/LICENSE)).
-    > a unified and modular framework for robot learning that aims to simplify common workflows in robotics research (such as RL, learning from demonstrations, and motion planning).
-    >
-    > -- [NVIDIA Isaac Orbit](https://github.com/NVIDIA-Omniverse/Orbit)
-
-    Omniverse Isaac Gym is a light-weight framework focusing on reinforcement learning tasks, while Isaac Orbit is a more general and modular framework that focuses on robotics applications. ([source](https://github.com/NVIDIA-Omniverse/orbit/blob/main/docs/source/setup/faq.rst), [source](https://forums.developer.nvidia.com/t/orbit-vs-omniisaacgymenvs/251329/3))
-
-    Isaac Orbit is now deprecated and will continue evolve as Isaac Lab. ([source](https://isaac-orbit.github.io/))
-
-  - (Omniverse) Isaac Gym [[docs](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)][[github](https://github.com/isaac-sim/OmniIsaacGymEnvs)]  
-    a light-weight repository based on Isaac Sim that provides a variety of GPU-accelerated reinforcement learning environments and algorithms.  
-    The repository is named as Omniverse Isaac Gym Environments (OIGE), and is released under the BSD 3-Clause License ([source](https://github.com/isaac-sim/OmniIsaacGymEnvs/blob/main/LICENSE.txt)).  
-    > an interface for performing reinforcement learning training and inferencing in Isaac Sim.
-    >
-    > -- [NVIDIA Isaac Gym](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/tutorial_gym_isaac_gym.html)
-
-    The latest release of Omniverse Isaac Gym is 4.0.0, and will not be further updated. ([source](https://github.com/isaac-sim/OmniIsaacGymEnvs))
-
-  - Isaac Gym (Preview Release) [[link](https://developer.nvidia.com/isaac-gym)][[github](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs)][[arxiv](https://arxiv.org/abs/2108.10470)][[site](https://sites.google.com/view/isaacgym-nvidia)][[youtube](https://youtu.be/nleDq-oJjGk?list=PLq2Xfjf6QzkrgDkQdtEzlnXeUAbTPEXNH)]  
-    the predecessor of (Omniverse) Isaac Gym that does not base on Isaac Sim (and Omniverse).  
-    The repository is named as Isaac Gym Environments (IGE), and is released under the BSD 3-Clause License ([source](https://github.com/NVIDIA-Omniverse/IsaacGymEnvs/blob/main/LICENSE.txt)). The documentation is provided in an offline form that can be accessed after download.
-    > NVIDIA’s physics simulation environment for reinforcement learning research.
-    >
-    > -- [NVIDIA Isaac Gym](https://developer.nvidia.com/isaac-gym)
-
-    The term `Isaac Gym` is ambiguous when viewed from a technical perspective. It's better to specify whether the mentioned Isaac Gym is based on Isaac Sim, or the preview version that does not base on Isaac Sim.
-
-    > Until Omniverse Isaac Gym functionality is feature complete, this standalone Isaac Gym Preview release will remain available.
-    >
-    > -- [NVIDIA Isaac Gym](https://developer.nvidia.com/isaac-gym)
-
-    The latest release of Isaac Gym (Preview Release) is Preview 4, and will not be further updated.
+- (Deprecated) [Isaac Orbit](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-orbit), [(Omniverse) Isaac Gym](https://tutorial.j3soon.com/robotics/deprecated-components/#omniverse-isaac-gym), [Isaac Gym (Preview Release)](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-gym-preview-release).
 
 - Project GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/project-GR00T)] [[blog](https://developer.nvidia.com/blog/advancing-humanoid-robot-sight-and-skill-development-with-nvidia-project-gr00t)]
   > a research initiative and development platform for general-purpose robot foundation models and data pipelines to accelerate humanoid robotics.
@@ -232,45 +182,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [NVIDIA Isaac Perceptor](https://developer.nvidia.com/isaac/perceptor)
 
-- Isaac AMR (before Isaac Perceptor) [[link](https://docs.nvidia.com/isaac/doc/index.html)]  
-  > Isaac AMR 2.0 features an autonomous navigation stack that includes lidar-based grid mapping, global and continuous localization, a global route planner, a mission client, a behavior planner, and wheel-IMU odometry, as well as a new path and trajectory planner and controller.
-  >
-  > This release also includes tools for data collection and a cloud-based map creation service. You can use the on-premises data center-based mission control for optimizing route planning with the NVIDIA cuOpt engine and delivering up-to-date maps to the robots.
-  >
-  > -- [NVIDIA Isaac AMR](https://developer.nvidia.com/isaac/amr)
-
-  Personally, I think Isaac AMR is an extension of Isaac SDK. This is based on the Isaac Sight UI screenshots in [source](https://docs.nvidia.com/isaac/doc/extensions/navigation_stack/doc/navigation_stack_on_isaac_sim.html), and I've noticed some Isaac SDK docs have been redirected/moved to Isaac AMR docs.
-
-- Isaac SDK [[docs](https://docs.nvidia.com/isaac/archive/2021.1/doc/index.html)]  
-  a toolkit for deploying GPU-accelerated algorithms on physical robots.
-  > a toolkit that includes building blocks and tools that accelerate robot developments that require the increased perception and navigation features enabled by AI.
-  >
-  > -- [NVIDIA Isaac SDK](https://developer.nvidia.com/isaac-sdk)
-
-  Personally, I suggest using Isaac ROS instead of Isaac SDK for simplicity. Since researchers/engineers working on robotics tend to be more familiar with the [Robot Operating System (ROS)](https://www.ros.org/) than the `bazel` command used in Isaac SDK. The Isaac GEMs and Isaac Applications included in Isaac SDK are also available in Isaac ROS.
-
-  > Isaac includes Isaac GEMs for both NVIDIA’s Isaac SDK Engine and ROS2. Isaac ROS has been more recently updated to contribute hardware acceleration to the growing ROS ecosystem. You can choose whichever one is more suitable for your project.
-  >
-  > -- [NVIDIA Forum Moderator](https://forums.developer.nvidia.com/t/is-isaac-depreciated/224402) (slightly rephrased)
-
-  The latest release of Isaac SDK is 2021.1, since the future roadmap of Isaac SDK is still under development ([source](https://forums.developer.nvidia.com/t/isaac-sdk-next-release/217841/2), [source](https://forums.developer.nvidia.com/t/is-isaac-depreciated/224402), [source](https://forums.developer.nvidia.com/t/isaac-sdk-is-dead/226267/2), [source](https://nvidia.slack.com/archives/CHG4MCWNQ/p1661260234425319?thread_ts=1658787137.725279&cid=CHG4MCWNQ)).
-
-  The Isaac Sight GUI also belongs to Isaac SDK.
-
-  - Isaac GEMs
-    > a collection of high-performance algorithms, also called GEMs, to accelerate the development of challenging robotics applications.
-    >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-gems)
-
-  - Isaac Applications
-    > provides various sample applications, which highlight features of Isaac SDK Engine or focus on the functionality of a particular Isaac SDK GEM.
-    >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-applications)
-
-  - Isaac (Robotics) Engine
-    > a feature-rich framework for building modular robotics applications.
-    >
-    > -- [NVIDIA Isaac SDK](https://docs.nvidia.com/isaac/archive/2021.1/doc/overview.html#isaac-engine)
+- Deprecated: [Isaac AMR](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-amr), [Isaac SDK](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-sdk).
 
 ### Mission Dispatch and Client
 
