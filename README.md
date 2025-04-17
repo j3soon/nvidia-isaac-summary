@@ -101,13 +101,6 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 - [Deprecated] [Isaac Orbit](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-orbit), [(Omniverse) Isaac Gym](https://tutorial.j3soon.com/robotics/deprecated-components/#omniverse-isaac-gym), [Isaac Gym (Preview Release)](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-gym-preview-release).
 
-- Project GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/project-GR00T)] [[blog](https://developer.nvidia.com/blog/advancing-humanoid-robot-sight-and-skill-development-with-nvidia-project-gr00t)]
-  > a research initiative and development platform for general-purpose robot foundation models and data pipelines to accelerate humanoid robotics.
-  >
-  > -- [NVIDIA Project GR00T](https://developer.nvidia.com/project-GR00T)
-
-  The GR00T workflows include GR00T-Teleop, GR00T-Mimic, GR00T-Gen, GR00T-Dexterity, GR00T-Mobility, GR00T-Control, and GR00T-Perception.
-
 ### Isaac ROS
 
 - Isaac Robot Operating System (ROS) [[link](https://developer.nvidia.com/isaac-ros)][[github](https://github.com/NVIDIA-ISAAC-ROS)][[docs](https://nvidia-isaac-ros.github.io/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/isaac/containers/ros)]  
@@ -132,7 +125,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   Some of the Isaac ROS packages are listed below:
 
-  - (Isaac ROS) Nvblox [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)]
+  - (Isaac ROS) Nvblox [[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)][[github](https://github.com/nvidia-isaac/nvblox)]
     > processes depth and pose to reconstruct a 3D scene in real-time and outputs a 2D costmap for Nav2. The costmap is used in planning during navigation as a vision-based solution to avoid obstacles.
     >
     > -- [Isaac ROS Nvblox](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_nvblox)
@@ -175,6 +168,16 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
       - cuRobo with Isaac Sim [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_advanced_curobo.html)]
 
+    - (Isaac ROS) Pose Estimation [[docs](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation)]
+      > Deep learned, NVIDIA-accelerated 3D object pose estimation
+      >
+      > -- [NVIDIA Isaac ROS Pose Estimation](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation)
+
+      - Foundation Pose [[github](https://github.com/NVlabs/FoundationPose)]
+        > a unified foundation model for 6D object pose estimation and tracking, supporting both model-based and model-free setups.
+        >
+        > -- [FoundationPose](https://github.com/NVlabs/FoundationPose)
+
 - Isaac Perceptor [[link](https://developer.nvidia.com/isaac/perceptor)][[docs](https://nvidia-isaac-ros.github.io/reference_workflows/isaac_perceptor/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_perceptor)]  
   a collection of Isaac ROS packages for autonomous mobile robots (AMRs).  
   Successor of _Isaac for AMRs_ and _Isaac AMR_.
@@ -194,6 +197,79 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > the ROS 2 packages for Mission Client, which communicates to a robot fleet management service. Mission Client receives tasks and actions from the fleet management service and updates its progress, state, and errors. Mission Client performs navigation actions with Nav2 and can be integrated with other ROS actions.
   >
   > -- [Isaac ROS Mission Client](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_mission_client)
+
+### (NVIDIA) Warp
+
+- (NVIDIA) Warp [[link](https://developer.nvidia.com/warp-python)][[docs](https://nvidia.github.io/warp/)][[github](https://github.com/NVIDIA/warp)][[blog](https://developer.nvidia.com/blog/creating-differentiable-graphics-and-physics-simulation-in-python-with-nvidia-warp/)][[gtc24](https://www.nvidia.com/en-us/on-demand/session/gtc24-s63345/)]
+  > an open-source developer framework for building and accelerating data generation and spatial computing in Python. Warp gives coders an easy way to write GPU-accelerated, kernel-based programs for simulation AI, robotics, and machine learning (ML).
+  >
+  > -- [NVIDIA Warp](https://developer.nvidia.com/warp-python)
+
+  Not to be confused with CUDA warps (groups of 32 parallel threads) or [warp-level primitives](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) in CUDA programming. Personally, I prefer to refer to it as _NVIDIA Warp_ for preciseness. In addition, for a detailed comparison with other Python GPU libraries, see the [FAQ](https://nvidia.github.io/warp/faq.html).
+
+- MuJoCo-Warp (or _MJWarp_) [[github](https://github.com/google-deepmind/mujoco_warp)]
+
+  a GPU-optimized version of [MuJoCo](https://github.com/google-deepmind/mujoco) implemented in NVIDIA Warp. It provides GPU-accelerated physics simulation capabilities and will be integrated into Newton and [MJX](https://github.com/google-deepmind/mujoco/tree/main/mjx).
+
+  > a GPU-optimized version of the MuJoCo physics simulator, designed for NVIDIA hardware.
+  >
+  > -- [MuJoCo Warp (MJWarp)](https://github.com/google-deepmind/mujoco_warp)
+
+- Newton [[blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)][[gtc25](https://www.nvidia.com/en-us/on-demand/session/gtc25-s72709/)]
+  > an open-source, extensible physics engine being developed by NVIDIA, Google DeepMind, and Disney Research to advance robot learning and development.
+  >
+  > -- [NVIDIA Newton](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)
+
+### GR00T (Generalist Robot 00 Technology)
+
+- GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/isaac/gr00t)] [[blog](https://developer.nvidia.com/blog/advancing-humanoid-robot-sight-and-skill-development-with-nvidia-project-gr00t)]
+  > a research initiative and development platform for developing general-purpose robot foundation models and data pipelines to accelerate humanoid robotics research and development.
+  >
+  > -- [NVIDIA Isaac GR00T](https://developer.nvidia.com/isaac/gr00t)
+
+  - GR00T N1 [[github](https://github.com/NVIDIA/Isaac-GR00T)][[paper](https://arxiv.org/abs/2503.14734)][[huggingface](https://huggingface.co/nvidia/GR00T-N1-2B)]
+
+    > the world's first open foundation model for generalized humanoid robot reasoning and skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments.
+    >
+    > -- [NVIDIA Isaac GR00T N1](https://github.com/NVIDIA/Isaac-GR00T)
+
+  - GR00T Workflows [[link](https://developer.nvidia.com/isaac/gr00t#section-key-workflows)]
+
+    The GR00T workflows include GR00T-Teleop, GR00T-Mimic, GR00T-Gen, GR00T-Dexterity, GR00T-Mobility, GR00T-Control, and GR00T-Perception.
+
+- Open Physical AI Dataset [[blog](https://blogs.nvidia.com/blog/open-physical-ai-dataset/)][[huggingface](https://huggingface.co/collections/nvidia/physical-ai-67c643edbb024053dcbcd6d8)]
+
+### Cosmos
+
+- Cosmos [[link](https://www.nvidia.com/en-us/ai/cosmos/)][[docs](https://developer.nvidia.com/cosmos)][[github](https://github.com/NVIDIA/Cosmos)][[paper](https://arxiv.org/abs/2501.03575)][[blog](https://blogs.nvidia.com/blog/cosmos-world-foundation-models)][[youtube](https://youtu.be/9Uch931cDx8)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-6751e884dc10e013a0a0d8e6)]
+  > a platform of state-of-the-art generative world foundation models (WFM), advanced tokenizers, guardrails, and an accelerated data processing and curation pipeline built to accelerate the development of physical AI systems such as autonomous vehicles (AVs) and robots.
+  >
+  > -- [NVIDIA Cosmos](https://www.nvidia.com/en-us/ai/cosmos/)
+  - Cosmos World Foundation Models [[link](https://developer.nvidia.com/cosmos#section-cosmos-models)][[github](https://github.com/nvidia-cosmos)]
+    - Cosmos-Predict1 [[github](https://github.com/nvidia-cosmos/cosmos-predict1)][[website](https://research.nvidia.com/labs/dir/cosmos-predict1/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-predict1-67c9d1b97678dbf7669c89a7)]
+      > a collection of general-purpose world foundation models for Physical AI that can be fine-tuned into customized world models for downstream applications.
+      >
+      > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+
+      - Cosmos-Tokenize1 [[link](https://github.com/nvidia-cosmos/cosmos-predict1?tab=readme-ov-file#cosmos-predict1-models)]
+    - Cosmos-Transfer1 [[github](https://github.com/nvidia-cosmos/cosmos-transfer1)][[website](https://research.nvidia.com/labs/dir/cosmos-transfer1/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-transfer1-67c9d328196453be6e568d3e)]
+      > a world-to-world transfer model designed to bridge the perceptual divide between simulated and real-world environments.
+      >
+      > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+    - Cosmos-Reason1 [[github](https://github.com/nvidia-cosmos/cosmos-reason1)][[website](https://research.nvidia.com/labs/dir/cosmos-reason1/)]
+      > understand the physical common sense and generate appropriate embodied decisions in natural language through long chain-of-thought reasoning processes.
+      >
+      > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+  - [Archived] Cosmos Models [[github](https://github.com/NVIDIA/Cosmos)]
+    - Cosmos Diffusion Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/diffusion/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-diffusion-7b)]
+      > Pre-trained Diffusion-based world foundation models for Text2World and Video2World generation
+    - Cosmos Autoregressive Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/autoregressive/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-autoregressive-5b)]
+      > Pre-trained Autoregressive-based world foundation models for Video2World generation
+  - [Archived] Cosmos Tokenizer [[github](https://github.com/NVIDIA/Cosmos-Tokenizer)][[youtube](https://youtu.be/Soy_myOfWIU)]
+    > a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators.
+    >
+    > -- [Cosmos Tokenizer](https://github.com/NVIDIA/Cosmos-Tokenizer)
+  - [etc.](https://developer.nvidia.com/cosmos)
 
 ### Miscellaneous
 
@@ -246,27 +322,12 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   Omniverse Farm is actually flexible enough to run arbitrary tasks, not just rendering tasks. See the [j3soon/omni-farm-isaac](https://github.com/j3soon/omni-farm-isaac) repository for more information.
 
-- Cosmos [[link](https://www.nvidia.com/en-us/ai/cosmos/)][[docs](https://developer.nvidia.com/cosmos)][[paper](https://arxiv.org/abs/2501.03575)][[blog](https://blogs.nvidia.com/blog/cosmos-world-foundation-models)][[youtube](https://youtu.be/9Uch931cDx8)]
-  > a platform of state-of-the-art generative world foundation models (WFM), advanced tokenizers, guardrails, and an accelerated data processing and curation pipeline built to accelerate the development of physical AI systems such as autonomous vehicles (AVs) and robots.
-  >
-  > -- [NVIDIA Cosmos](https://www.nvidia.com/en-us/ai/cosmos/)
-  - Cosmos Models [[github](https://github.com/NVIDIA/Cosmos)]
-    - Cosmos Diffusion Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/diffusion/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-diffusion-7b)]
-      > Pre-trained Diffusion-based world foundation models for Text2World and Video2World generation
-    - Cosmos Autoregressive Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/autoregressive/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-autoregressive-5b)]
-      > Pre-trained Autoregressive-based world foundation models for Video2World generation
-  - Cosmos Tokenizer [[github](https://github.com/NVIDIA/Cosmos-Tokenizer)][[youtube](https://youtu.be/Soy_myOfWIU)]
-    > a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators.
-    >
-    > -- [Cosmos Tokenizer](https://github.com/NVIDIA/Cosmos-Tokenizer)
-  - Other pipeline components such as Cosmos Guardrail, Cosmos PromptUpsampler, Cosmos Diffusion Decoder, and Pre-training and post-training scripts via NeMo framework. [[link](https://developer.nvidia.com/cosmos)]
-
-- Mega [[blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)]
+- Mega [[blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)][[youtube](https://youtu.be/S65_0clKQTE)]
   > an Omniverse Blueprint for developing, testing and optimizing physical AI and robot fleets at scale in a digital twin before deployment into real-world facilities.
   >
   > -- [NVIDIA Blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)
 
-- NVIDIA NIMs and Blueprints for Simulation [[link](https://build.nvidia.com/explore/simulation)]
+- NVIDIA NIMs and Blueprints for Simulation [[link](https://build.nvidia.com/explore/simulation)][[github](https://github.com/NVIDIA-Omniverse-blueprints)]
 
 ## Coding References
 
@@ -339,4 +400,4 @@ Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if
 
 I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
-Last updated on 2025/01/15.
+Last updated on 2025/04/17.
