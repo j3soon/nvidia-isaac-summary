@@ -155,7 +155,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
       > -- [Lula Robot Description and XRDF Editor](https://docs.isaacsim.omniverse.nvidia.com/latest/manipulators/manipulators_robot_description_editor.html)
 
   - (Isaac ROS) cuMotion [[docs](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_cumotion)]
-    > provides CUDA-accelerated manipulation capabilities for robots in ROS 2. It provides two main capabilities: (1) Motion generation for robot arms via integration of cuMotion into MoveIt 2, and (2) Segmentation of robots from depth streams using cuMotion’s kinematics and geometry processing functions to accurately identify and filter out parts of the robot. This allows reconstruction of obstacles in the environment without spurious contributions from the robot itself.
+    > provides CUDA-accelerated manipulation capabilities for robots in ROS 2. It provides two main capabilities: (1) Motion generation for robot arms via integration of cuMotion into MoveIt 2, and (2) Segmentation of robots from depth streams using cuMotion's kinematics and geometry processing functions to accurately identify and filter out parts of the robot. This allows reconstruction of obstacles in the environment without spurious contributions from the robot itself.
     >
     > -- [Isaac ROS cuMotion](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_cumotion/index.html)
 
@@ -281,12 +281,12 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 - Nova Carter [[link](https://robotics.segway.com/nova-carter/)][[spec](https://docs.nvidia.com/isaac/doc/novacarter.html)]  
   a reference design robot based on the Isaac Nova Orin architecture.
-  > a reference design robot that uses the Nova Orin compute and sensor architecture. It’s a complete robotics development platform that accelerates the development and deployment of next-generation Autonomous Mobile Robots (AMRs). You can learn more about it from our partner, Segway Robotics
+  > a reference design robot that uses the Nova Orin compute and sensor architecture. It's a complete robotics development platform that accelerates the development and deployment of next-generation Autonomous Mobile Robots (AMRs). You can learn more about it from our partner, Segway Robotics
   >
   > -- [NVIDIA Isaac Nova Orin](https://developer.nvidia.com/isaac/nova-orin)
 
 - NVIDIA IGX Orin [[link](https://www.nvidia.com/en-us/edge-computing/products/igx/)]
-  > an industrial-grade, edge AI platform that combines enterprise-level hardware, software, and support. It’s purpose-built for industrial and medical environments, delivering powerful AI compute, high-bandwidth sensor processing, enterprise security, and functional safety. The platform also comes with NVIDIA AI Enterprise and up to 10 years of support, so you can confidently deliver AI safely and securely to support human and machine collaboration.
+  > an industrial-grade, edge AI platform that combines enterprise-level hardware, software, and support. It's purpose-built for industrial and medical environments, delivering powerful AI compute, high-bandwidth sensor processing, enterprise security, and functional safety. The platform also comes with NVIDIA AI Enterprise and up to 10 years of support, so you can confidently deliver AI safely and securely to support human and machine collaboration.
   >
   > -- [NVIDIA IGX Orin](https://www.nvidia.com/en-us/edge-computing/products/igx/)
 
@@ -328,6 +328,58 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > -- [NVIDIA Blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)
 
 - NVIDIA NIMs and Blueprints for Simulation [[link](https://build.nvidia.com/explore/simulation)][[github](https://github.com/NVIDIA-Omniverse-blueprints)]
+
+### NVIDIA Research Projects
+
+- R2D2 (or $R^2D^2$, Robotics Research and Development Digest) 1st Edition [[blog](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)]
+  - MobilityGen [[github](https://github.com/NVlabs/MobilityGen)][[dli](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-37+V1)]
+    > A simulation-based workflow that uses Isaac Sim to rapidly generate large synthetic motion datasets for building models for robots across different embodiments and environments, as well as testing robots to navigate new environments, reducing costs and time compared to real-world data collection.
+    >
+    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+  - COMPASS (Cross-embOdiment Mobility Policy via ResiduAl RL and Skill Synthesis) [[github](https://github.com/NVlabs/COMPASS)][[site](https://nvlabs.github.io/COMPASS/)][[paper](https://arxiv.org/abs/2502.16372)]
+    > A workflow for developing cross-embodiment mobility policies, facilitating fine-tuning using Isaac Lab, and zero-shot sim-to-real deployment.
+    >
+    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+
+    - X-Mobility [[github](https://github.com/NVlabs/X-MOBILITY)][[site](https://nvlabs.github.io/X-MOBILITY/)][[paper](https://arxiv.org/abs/2410.17491)]
+      > A generalizable navigation model using auto-regressive world modeling, multi-head decoders, and decoupled policy learning for robust, zero-shot Sim2Real and cross-embodiment transfer.
+      >
+      > -- [X-Mobility](https://github.com/NVlabs/X-MOBILITY)
+  - HOVER (Humanoid Versatile Controller) [[github](https://github.com/NVlabs/HOVER/)][[site](https://hover-versatile-humanoid.github.io/)][[paper](https://arxiv.org/abs/2410.21229)]
+    > A workflow and a unified whole-body control generalist policy for diverse control modes in humanoid robots in Isaac Lab.
+    >
+    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+  - ReMEmbR (a Retrieval-augmented Memory for Embodied Robots) [[github](https://github.com/NVIDIA-AI-IOT/remembr)][[site](https://nvidia-ai-iot.github.io/remembr/)][[blog](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/)][[paper](https://arxiv.org/abs/2409.13682)]
+    > A workflow that enables robots to reason and take mobility action, using LLMs, VLMs, and RAG (Retrieval-Augmented Generation).
+    >
+    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+
+- Foundation Stereo [[github](https://github.com/NVlabs/FoundationStereo)][[site](https://nvlabs.github.io/FoundationStereo/)][[paper](https://arxiv.org/abs/2501.09898)]
+  > a foundation model for stereo depth estimation designed to achieve strong zero-shot generalization.
+  >
+  > -- [FoundationStereo](https://github.com/NVlabs/FoundationStereo)
+
+- RoboCasa [[github](https://github.com/robocasa/robocasa)][[docs](https://robocasa.ai/docs/introduction/overview.html)][[site](https://robocasa.ai/)][[paper](https://arxiv.org/abs/2406.02523)]
+  > a large-scale simulation framework for training generally capable robots to perform everyday tasks.
+  >
+  > -- [RoboCasa](https://github.com/robocasa/robocasa)
+
+- MimicGen [[github](https://github.com/NVlabs/mimicgen)][[docs](https://mimicgen.github.io/docs/introduction/overview.html)][[site](https://mimicgen.github.io/)][[paper](https://arxiv.org/abs/2310.17596)]
+  > a system for automatically synthesizing large-scale, rich datasets from only a small number of human demonstrations by adapting them to new contexts.
+  >
+  > -- [MimicGen](https://arxiv.org/abs/2310.17596)
+
+  - DexMimicGen [[github](https://github.com/NVlabs/dexmimicgen)][[site](https://dexmimicgen.github.io/)][[paper](https://arxiv.org/abs/2410.24185)]
+    > a large-scale automated data generation system that synthesizes trajectories from a handful of human demonstrations for humanoid robots with dexterous hands.
+    >
+    > -- [DexMimicGen](https://arxiv.org/abs/2410.24185)
+
+- MineDojo [[github](https://github.com/MineDojo/MineDojo)][[docs](https://docs.minedojo.org/)][[site](https://minedojo.org/)][[paper](https://arxiv.org/abs/2206.08853)]
+  > a new AI research framework for building open-ended, generally capable embodied agents.
+  >
+  > -- [MineDojo](https://github.com/MineDojo/MineDojo)
+
+- Other projects included in Isaac products such as [Curobo, FoundationPose](#isaac-ros), and [GR00T N1](#gr00t-generalist-robot-00-technology).
 
 ## Coding References
 
