@@ -328,6 +328,28 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > -- [NVIDIA Blog](https://blogs.nvidia.com/blog/mega-omniverse-blueprint/)
 
 - NVIDIA NIMs and Blueprints for Simulation [[link](https://build.nvidia.com/explore/simulation)][[github](https://github.com/NVIDIA-Omniverse-blueprints)]
+  - 3D Conditioning for Precise Visual Generative AI [[github](https://github.com/NVIDIA-Omniverse-blueprints/3d-conditioning)][[link](https://build.nvidia.com/nvidia/conditioning-for-precise-visual-generative-ai)]
+    > Enhance and modify high-quality compositions using real-time rendering and generative AI output without affecting a hero product asset.
+    >
+    > -- [3D Conditioning for Precise Visual Generative AI](https://github.com/NVIDIA-Omniverse-blueprints/3d-conditioning)
+  - Synthetic Manipulation Motion Generation for Robotics [[github](https://github.com/NVIDIA-Omniverse-blueprints/synthetic-manipulation-motion-generation)][[link](https://build.nvidia.com/nvidia/isaac-gr00t-synthetic-manipulation)]
+    > Reference workflow for generating large amounts of synthetic motion trajectories for robot manipulation from a few human demonstrations.
+    >
+    > -- [Synthetic Manipulation Motion Generation for Robotics](https://github.com/NVIDIA-Omniverse-blueprints/synthetic-manipulation-motion-generation)
+  - AI Weather Analytics with Earth-2 [[github](https://github.com/NVIDIA-Omniverse-blueprints/earth2-weather-analytics)][[link](https://build.nvidia.com/nvidia/earth2-weather-analytics)]
+    > Reference implementation of the Omniverse Blueprint for Earth-2 Weather Analytics.
+    >
+    > -- [Earth-2 Weather Analytics Blueprint](https://github.com/NVIDIA-Omniverse-blueprints/earth2-weather-analytics)
+  - Build a Digital Twin for Interactive Fluid Simulation [[github](https://github.com/NVIDIA-Omniverse-blueprints/digital-twins-for-fluid-simulation)][[link](https://build.nvidia.com/nvidia/digital-twins-for-fluid-simulation)]
+    > a reference workflow for building real-time digital twins for external aerodynamic Computational Fluid Dynamics (CFD) workflows combining CUDA-X accelerated solvers, PhysicsNeMo for physics AI, and Omniverse for high quality rendering.
+    >
+    > -- [Omniverse Blueprint for Real-time Computer-aided Engineering Digital Twins](https://github.com/NVIDIA-Omniverse-blueprints/digital-twins-for-fluid-simulation)
+  - and more...
+
+- IsaacSimZMQ [[github](https://github.com/isaac-sim/IsaacSimZMQ)]
+  > A reference bridge implementation for bidirectional communication between NVIDIA Isaac Sim and external applications using ZeroMQ and Protobuf.
+  >
+  > -- [IsaacSimZMQ](https://github.com/isaac-sim/IsaacSimZMQ)
 
 ### NVIDIA Research Projects
 
