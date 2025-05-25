@@ -205,7 +205,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [NVIDIA Warp](https://developer.nvidia.com/warp-python)
 
-  Not to be confused with CUDA warps (groups of 32 parallel threads) or [warp-level primitives](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) in CUDA programming. Personally, I prefer to refer to it as _NVIDIA Warp_ for preciseness. In addition, for a detailed comparison with other Python GPU libraries, see the [FAQ](https://nvidia.github.io/warp/faq.html).
+  Not to be confused with CUDA warps (groups of 32 parallel threads) or [warp-level primitives](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) in CUDA programming. Personally, I prefer to refer to it as _NVIDIA Warp_ (or _Warp Python_ as in the official URL) for preciseness. In addition, for a detailed comparison with other Python GPU libraries, see the [FAQ](https://nvidia.github.io/warp/faq.html).
 
 - MuJoCo-Warp (or _MJWarp_) [[github](https://github.com/google-deepmind/mujoco_warp)]
 
@@ -221,6 +221,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > -- [NVIDIA Newton](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)
 
 ### GR00T (Generalist Robot 00 Technology)
+
+> Pronounced as _groot_.
 
 - GR00T (Generalist Robot 00 Technology) [[link](https://developer.nvidia.com/isaac/gr00t)] [[blog](https://developer.nvidia.com/blog/advancing-humanoid-robot-sight-and-skill-development-with-nvidia-project-gr00t)]
   > a research initiative and development platform for developing general-purpose robot foundation models and data pipelines to accelerate humanoid robotics research and development.
@@ -353,28 +355,71 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 ### NVIDIA Research Projects
 
-- R2D2 (or $R^2D^2$, Robotics Research and Development Digest) 1st Edition [[blog](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)]
-  - MobilityGen [[github](https://github.com/NVlabs/MobilityGen)][[dli](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-37+V1)]
-    > A simulation-based workflow that uses Isaac Sim to rapidly generate large synthetic motion datasets for building models for robots across different embodiments and environments, as well as testing robots to navigate new environments, reducing costs and time compared to real-world data collection.
-    >
-    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
-  - COMPASS (Cross-embOdiment Mobility Policy via ResiduAl RL and Skill Synthesis) [[github](https://github.com/NVlabs/COMPASS)][[site](https://nvlabs.github.io/COMPASS/)][[paper](https://arxiv.org/abs/2502.16372)]
-    > A workflow for developing cross-embodiment mobility policies, facilitating fine-tuning using Isaac Lab, and zero-shot sim-to-real deployment.
-    >
-    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
-
-    - X-Mobility [[github](https://github.com/NVlabs/X-MOBILITY)][[site](https://nvlabs.github.io/X-MOBILITY/)][[paper](https://arxiv.org/abs/2410.17491)]
-      > A generalizable navigation model using auto-regressive world modeling, multi-head decoders, and decoupled policy learning for robust, zero-shot Sim2Real and cross-embodiment transfer.
+- R2D2 (or $R^2D^2$, Robotics Research and Development Digest) [[blogs](https://developer.nvidia.com/blog/tag/robotics-research-development-digest-r2d2/)]
+  - 1st Edition [[blog](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)]
+    - MobilityGen [[github](https://github.com/NVlabs/MobilityGen)][[dli](https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-OV-37+V1)]
+      > A simulation-based workflow that uses Isaac Sim to rapidly generate large synthetic motion datasets for building models for robots across different embodiments and environments, as well as testing robots to navigate new environments, reducing costs and time compared to real-world data collection.
       >
-      > -- [X-Mobility](https://github.com/NVlabs/X-MOBILITY)
-  - HOVER (Humanoid Versatile Controller) [[github](https://github.com/NVlabs/HOVER/)][[site](https://hover-versatile-humanoid.github.io/)][[paper](https://arxiv.org/abs/2410.21229)]
-    > A workflow and a unified whole-body control generalist policy for diverse control modes in humanoid robots in Isaac Lab.
-    >
-    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
-  - ReMEmbR (a Retrieval-augmented Memory for Embodied Robots) [[github](https://github.com/NVIDIA-AI-IOT/remembr)][[site](https://nvidia-ai-iot.github.io/remembr/)][[blog](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/)][[paper](https://arxiv.org/abs/2409.13682)]
-    > A workflow that enables robots to reason and take mobility action, using LLMs, VLMs, and RAG (Retrieval-Augmented Generation).
-    >
-    > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+    - COMPASS (Cross-embOdiment Mobility Policy via ResiduAl RL and Skill Synthesis) [[github](https://github.com/NVlabs/COMPASS)][[site](https://nvlabs.github.io/COMPASS/)][[paper](https://arxiv.org/abs/2502.16372)]
+      > A workflow for developing cross-embodiment mobility policies, facilitating fine-tuning using Isaac Lab, and zero-shot sim-to-real deployment.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+
+      - X-Mobility [[github](https://github.com/NVlabs/X-MOBILITY)][[site](https://nvlabs.github.io/X-MOBILITY/)][[paper](https://arxiv.org/abs/2410.17491)]
+        > A generalizable navigation model using auto-regressive world modeling, multi-head decoders, and decoupled policy learning for robust, zero-shot Sim2Real and cross-embodiment transfer.
+        >
+        > -- [X-Mobility](https://github.com/NVlabs/X-MOBILITY)
+    - HOVER (Humanoid Versatile Controller) [[github](https://github.com/NVlabs/HOVER/)][[site](https://hover-versatile-humanoid.github.io/)][[paper](https://arxiv.org/abs/2410.21229)]
+      > A workflow and a unified whole-body control generalist policy for diverse control modes in humanoid robots in Isaac Lab.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+    - ReMEmbR (a Retrieval-augmented Memory for Embodied Robots) [[github](https://github.com/NVIDIA-AI-IOT/remembr)][[site](https://nvidia-ai-iot.github.io/remembr/)][[blog](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/)][[paper](https://arxiv.org/abs/2409.13682)]
+      > A workflow that enables robots to reason and take mobility action, using LLMs, VLMs, and RAG (Retrieval-Augmented Generation).
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+  - 2nd Edition [[blog](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)]
+    - Factory [[link](https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html#contact-rich-manipulation)][[paper](https://arxiv.org/abs/2205.03532)]
+      > A fast, physics-based simulation and learning toolkit for real-time contact-rich interactions.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+    - IndustReal [[paper](https://arxiv.org/abs/2305.17110)][[site](https://sites.google.com/nvidia.com/industreal)][[blog](https://developer.nvidia.com/blog/transferring-industrial-robot-assembly-tasks-from-simulation-to-reality/)]
+      > A toolkit of algorithms and systems enabling robots to learn assembly tasks in simulation using reinforcement learning and transfer them to the real world.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+    - AutoMate [[paper](https://arxiv.org/abs/2407.08028)][[site](https://bingjietang718.github.io/automate/)][[blog](https://developer.nvidia.com/blog/training-sim-to-real-transferable-robotic-assembly-skills-over-diverse-geometries/)]
+      > A novel policy-learning framework for training specialist and generalist robotic assembly policies across diverse geometries.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+    - MatchMaker [[paper](shttps://arxiv.org/abs/2503.05887)][[site](https://wangyian-me.github.io/MatchMaker/)]
+      > A novel pipeline for auto-generating diverse, sim-ready assembly asset pairs using generative AI.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+    - SRSA [[paper](https://arxiv.org/abs/2503.04538)][[site](https://srsa2024.github.io/)]
+      > A framework for retrieving preexisting skills for fine-tuning on a new robot assembly task.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+    - TacSL [[paper](https://arxiv.org/abs/2408.06506)][[site](https://iakinola23.github.io/tacsl/)]
+      > A library for GPU-based visuotactile sensor simulation and learning.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+    - FORGE [[paper](https://arxiv.org/abs/2408.04587)][[site](https://noseworm.github.io/forge/)]
+      > Zero-shot sim-to-real transfer of reinforcement-learning policies that use force measurements as input.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)
+  - 3rd Edition [[blog](https://developer.nvidia.com/blog/r2d2-adapting-dexterous-robots-with-nvidia-research-workflows-and-models/)]
+    - DextrAH-RGB [[paper](https://arxiv.org/abs/2412.01791)][[site](https://dextrah-rgb.github.io/)]
+      > A workflow for dexterous grasping from stereo RGB input.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-adapting-dexterous-robots-with-nvidia-research-workflows-and-models/)
+    - DexMimicGen [[github](https://github.com/NVlabs/dexmimicgen/)][[paper](https://arxiv.org/abs/2410.24185)][[site](https://dexmimicgen.github.io/)]
+      > A data generation pipeline for bimanual dexterous manipulation using imitation learning (IL).
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-adapting-dexterous-robots-with-nvidia-research-workflows-and-models/)
+    - GraspGen [[huggingface](https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GraspGen)]
+      > A synthetic dataset of over 57 million grasps for different robots and grippers.
+      >
+      > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-adapting-dexterous-robots-with-nvidia-research-workflows-and-models/)
 
 - Foundation Stereo [[github](https://github.com/NVlabs/FoundationStereo)][[site](https://nvlabs.github.io/FoundationStereo/)][[paper](https://arxiv.org/abs/2501.09898)]
   > a foundation model for stereo depth estimation designed to achieve strong zero-shot generalization.
@@ -390,11 +435,6 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > a system for automatically synthesizing large-scale, rich datasets from only a small number of human demonstrations by adapting them to new contexts.
   >
   > -- [MimicGen](https://arxiv.org/abs/2310.17596)
-
-  - DexMimicGen [[github](https://github.com/NVlabs/dexmimicgen)][[site](https://dexmimicgen.github.io/)][[paper](https://arxiv.org/abs/2410.24185)]
-    > a large-scale automated data generation system that synthesizes trajectories from a handful of human demonstrations for humanoid robots with dexterous hands.
-    >
-    > -- [DexMimicGen](https://arxiv.org/abs/2410.24185)
 
 - MineDojo [[github](https://github.com/MineDojo/MineDojo)][[docs](https://docs.minedojo.org/)][[site](https://minedojo.org/)][[paper](https://arxiv.org/abs/2206.08853)]
   > a new AI research framework for building open-ended, generally capable embodied agents.
