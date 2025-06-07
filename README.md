@@ -90,7 +90,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 ### Isaac Lab
 
-- Isaac Lab [[link](https://developer.nvidia.com/isaac/lab)][[docs](https://isaac-sim.github.io/IsaacLab/index.html)][[docs](https://docs.isaacsim.omniverse.nvidia.com/latest/isaac_lab_tutorials/index.html)][[github](https://github.com/isaac-sim/IsaacLab)]  
+- Isaac Lab [[link](https://developer.nvidia.com/isaac/lab)][[docs](https://isaac-sim.github.io/IsaacLab/index.html)][[docs](https://docs.isaacsim.omniverse.nvidia.com/latest/isaac_lab_tutorials/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-lab)][[github](https://github.com/isaac-sim/IsaacLab)]  
   an open-source platform based on Isaac Sim, currently the de facto framework for robot learning in Omniverse.  
   Formerly _Isaac Orbit_.
   > a unified and modular framework for robot learning that aims to simplify common workflows in robotics research (such as RL, learning from demonstrations, and motion planning). It is built upon NVIDIA Isaac Sim to leverage the latest simulation capabilities for photo-realistic scenes, and fast and efficient simulation.
@@ -168,6 +168,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
       - cuRobo with Isaac Sim [[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_advanced_curobo.html)]
 
+      - cuTAMP (Task and Motion Planning) [[site](https://cutamp.github.io/)][[paper](https://arxiv.org/abs/2411.11833)]
+
     - (Isaac ROS) Pose Estimation [[docs](https://nvidia-isaac-ros.github.io/repositories_and_packages/isaac_ros_pose_estimation/index.html)][[github](https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_pose_estimation)]
       > Deep learned, NVIDIA-accelerated 3D object pose estimation
       >
@@ -215,7 +217,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [MuJoCo Warp (MJWarp)](https://github.com/google-deepmind/mujoco_warp)
 
-- Newton [[blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)][[gtc25](https://www.nvidia.com/en-us/on-demand/session/gtc25-s72709/)]
+- Newton [[github](https://github.com/newton-physics/newton)][[blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)][[gtc25](https://www.nvidia.com/en-us/on-demand/session/gtc25-s72709/)]
   > an open-source, extensible physics engine being developed by NVIDIA, Google DeepMind, and Disney Research to advance robot learning and development.
   >
   > -- [NVIDIA Newton](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)
@@ -514,4 +516,4 @@ Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if
 
 I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
-Last updated on 2025/04/17.
+Last updated on 2025/05/26.
