@@ -231,7 +231,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [NVIDIA Isaac GR00T](https://developer.nvidia.com/isaac/gr00t)
 
-  - GR00T N1 [[github](https://github.com/NVIDIA/Isaac-GR00T)][[paper](https://arxiv.org/abs/2503.14734)][[huggingface](https://huggingface.co/nvidia/GR00T-N1-2B)]
+  - GR00T N1 and N1.5 [[github](https://github.com/NVIDIA/Isaac-GR00T)][[paper](https://arxiv.org/abs/2503.14734)][[N1 huggingface](https://huggingface.co/nvidia/GR00T-N1-2B)][[N1.5 huggingface](https://huggingface.co/nvidia/GR00T-N1.5-3B)]
 
     > the world's first open foundation model for generalized humanoid robot reasoning and skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments.
     >
@@ -254,8 +254,9 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
       > a collection of general-purpose world foundation models for Physical AI that can be fine-tuned into customized world models for downstream applications.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
-
+      - Cosmos-Predict2 [[github](https://github.com/nvidia-cosmos/cosmos-predict2)][[website](https://research.nvidia.com/labs/dir/cosmos-predict2/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-predict2-68028efc052239369a0f2959)]
       - Cosmos-Tokenize1 [[link](https://github.com/nvidia-cosmos/cosmos-predict1?tab=readme-ov-file#cosmos-predict1-models)]
+
     - Cosmos-Transfer1 [[github](https://github.com/nvidia-cosmos/cosmos-transfer1)][[website](https://research.nvidia.com/labs/dir/cosmos-transfer1/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-transfer1-67c9d328196453be6e568d3e)]
       > a world-to-world transfer model designed to bridge the perceptual divide between simulated and real-world environments.
       >
@@ -264,11 +265,13 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
       > understand the physical common sense and generate appropriate embodied decisions in natural language through long chain-of-thought reasoning processes.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+
   - [Archived] Cosmos Models [[github](https://github.com/NVIDIA/Cosmos)]
     - Cosmos Diffusion Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/diffusion/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-diffusion-7b)]
       > Pre-trained Diffusion-based world foundation models for Text2World and Video2World generation
     - Cosmos Autoregressive Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/autoregressive/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-autoregressive-5b)]
       > Pre-trained Autoregressive-based world foundation models for Video2World generation
+
   - [Archived] Cosmos Tokenizer [[github](https://github.com/NVIDIA/Cosmos-Tokenizer)][[youtube](https://youtu.be/Soy_myOfWIU)]
     > a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators.
     >
@@ -372,14 +375,17 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
         > A generalizable navigation model using auto-regressive world modeling, multi-head decoders, and decoupled policy learning for robust, zero-shot Sim2Real and cross-embodiment transfer.
         >
         > -- [X-Mobility](https://github.com/NVlabs/X-MOBILITY)
+
     - HOVER (Humanoid Versatile Controller) [[github](https://github.com/NVlabs/HOVER/)][[site](https://hover-versatile-humanoid.github.io/)][[paper](https://arxiv.org/abs/2410.21229)]
       > A workflow and a unified whole-body control generalist policy for diverse control modes in humanoid robots in Isaac Lab.
       >
       > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+
     - ReMEmbR (a Retrieval-augmented Memory for Embodied Robots) [[github](https://github.com/NVIDIA-AI-IOT/remembr)][[site](https://nvidia-ai-iot.github.io/remembr/)][[blog](https://developer.nvidia.com/blog/using-generative-ai-to-enable-robots-to-reason-and-act-with-remembr/)][[paper](https://arxiv.org/abs/2409.13682)]
       > A workflow that enables robots to reason and take mobility action, using LLMs, VLMs, and RAG (Retrieval-Augmented Generation).
       >
       > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-advancing-robot-mobility-whole-body-control-with-ai-from-nvidia-research/)
+
   - 2nd Edition [[blog](https://developer.nvidia.com/blog/r2d2-unlocking-robotic-assembly-and-contact-rich-manipulation-with-nvidia-research/)]
     - Factory [[link](https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html#contact-rich-manipulation)][[paper](https://arxiv.org/abs/2205.03532)]
       > A fast, physics-based simulation and learning toolkit for real-time contact-rich interactions.
