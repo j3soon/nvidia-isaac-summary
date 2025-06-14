@@ -24,8 +24,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 ### (Omniverse) Isaac Sim
 
-- (Omniverse) Isaac Sim [[link](https://developer.nvidia.com/isaac-sim)][[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-OV-01+V1/)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+S-OV-03+V1/)][[youtube](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)]  
-  a robotics simulation toolkit based on Omniverse.
+- (Omniverse) Isaac Sim [[link](https://developer.nvidia.com/isaac-sim)][[docs](https://docs.omniverse.nvidia.com/isaacsim/latest/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-sim)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-OV-01+V1/)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+S-OV-03+V1/)][[youtube](https://youtu.be/pxPFr58gHmQ?list=PL3jK4xNnlCVf1SzxjCm7ZxDBNl9QYyV8X)][[github](https://github.com/isaac-sim/IsaacSim)]  
+  an open-source robotics simulation toolkit based on Omniverse.
   > a scalable robotics simulation application and synthetic data-generation tool that powers photorealistic, physically accurate virtual environments.
   >
   > -- [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac-sim)
