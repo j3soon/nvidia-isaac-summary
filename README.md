@@ -241,6 +241,12 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
     The GR00T workflows include GR00T-Teleop, GR00T-Mimic, GR00T-Gen, GR00T-Dexterity, GR00T-Mobility, GR00T-Control, and GR00T-Perception.
 
+  - GR00T Dreams [[github](https://github.com/nvidia/gr00t-dreams)][[paper](https://arxiv.org/abs/2505.12705)][[site](https://research.nvidia.com/labs/gear/dreamgen/)]
+
+    > GR00T Dreams is a research agenda from the Nvidia GEAR Lab to solve the robotics data problems through world models.
+    >
+    > -- [GR00T Dreams](https://github.com/nvidia/gr00t-dreams)
+
 - Open Physical AI Dataset [[blog](https://blogs.nvidia.com/blog/open-physical-ai-dataset/)][[huggingface](https://huggingface.co/collections/nvidia/physical-ai-67c643edbb024053dcbcd6d8)]
 
 ### Cosmos
