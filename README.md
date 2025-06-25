@@ -310,7 +310,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   OSMO refers to an orchestration platform, which can take a workflow spec and run the specified workloads on Omniverse Cloud or DGX Cloud.
 
-- cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[nim](https://build.nvidia.com/nvidia/nvidia-cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
+- cuOpt [[link](https://developer.nvidia.com/cuopt-logistics-optimization)][[docs](https://docs.nvidia.com/cuopt/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/cuopt/containers/cuopt)][[nim](https://build.nvidia.com/nvidia/nvidia-cuopt)][[dli](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-05+V1/)][[github](https://github.com/NVIDIA/cuopt)][[github](https://github.com/NVIDIA/cuOpt-Resources)]  
   a GPU-accelerated solver for [vehicle routing problem](https://en.wikipedia.org/wiki/Vehicle_routing_problem).  
   Formerly _ReOpt_.
   > a GPU-accelerated logistics solver that uses heuristics and optimizations to calculate complex vehicle routing problem variants with a wide range of constraints.
