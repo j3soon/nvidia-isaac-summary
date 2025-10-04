@@ -207,7 +207,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [NVIDIA Warp](https://developer.nvidia.com/warp-python)
 
-  Not to be confused with CUDA warps (groups of 32 parallel threads) or [warp-level primitives](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) in CUDA programming. Personally, I prefer to refer to it as _NVIDIA Warp_ (or _Warp Python_ as in the official URL) for preciseness. In addition, for a detailed comparison with other Python GPU libraries, see the [FAQ](https://nvidia.github.io/warp/faq.html).
+  Not to be confused with CUDA warps (groups of 32 parallel threads) or [warp-level primitives](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) in CUDA programming. Personally, I prefer to refer to it as _NVIDIA Warp_ (or _Warp Python_ as in the official URL, or _Warp Lang_ as in the PyPI package name) for preciseness. In addition, for a detailed comparison with other Python GPU libraries, see the [FAQ](https://nvidia.github.io/warp/faq.html).
 
 - MuJoCo-Warp (or _MJWarp_) [[github](https://github.com/google-deepmind/mujoco_warp)]
 
@@ -217,7 +217,10 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [MuJoCo Warp (MJWarp)](https://github.com/google-deepmind/mujoco_warp)
 
-- Newton [[github](https://github.com/newton-physics/newton)][[blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)][[gtc25](https://www.nvidia.com/en-us/on-demand/session/gtc25-s72709/)]
+- Newton [[github](https://github.com/newton-physics/newton)][[blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)][[gtc25](https://www.nvidia.com/en-us/on-demand/session/gtc25-s72709/)][[gtc-paris25](https://www.nvidia.com/en-us/on-demand/session/gtcparis25-gp1133/)]
+
+  May become an Isaac Sim simulation backend [in the future](https://github.com/isaac-sim/IsaacSim/discussions/9).
+
   > an open-source, extensible physics engine being developed by NVIDIA, Google DeepMind, and Disney Research to advance robot learning and development.
   >
   > -- [NVIDIA Newton](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)
@@ -267,6 +270,9 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
       > a world-to-world transfer model designed to bridge the perceptual divide between simulated and real-world environments.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+      - Cosmos-Drive-Dreams [[github](https://github.com/nv-tlabs/Cosmos-Drive-Dreams)][[website](https://research.nvidia.com/labs/toronto-ai/cosmos_drive_dreams/)][[paper](https://arxiv.org/abs/2506.09042)]
+      - Cosmos-DiffusionRenderer [[github](https://github.com/nv-tlabs/cosmos1-diffusion-renderer)][[website](https://research.nvidia.com/labs/toronto-ai/DiffusionRenderer/)][[paper](https://arxiv.org/abs/2501.18590)]
+
     - Cosmos-Reason1 [[github](https://github.com/nvidia-cosmos/cosmos-reason1)][[website](https://research.nvidia.com/labs/dir/cosmos-reason1/)]
       > understand the physical common sense and generate appropriate embodied decisions in natural language through long chain-of-thought reasoning processes.
       >
