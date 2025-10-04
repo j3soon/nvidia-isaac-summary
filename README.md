@@ -90,7 +90,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 ### Isaac Lab
 
-- Isaac Lab [[link](https://developer.nvidia.com/isaac/lab)][[docs](https://isaac-sim.github.io/IsaacLab/index.html)][[docs](https://docs.isaacsim.omniverse.nvidia.com/latest/isaac_lab_tutorials/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-lab)][[github](https://github.com/isaac-sim/IsaacLab)]  
+- Isaac Lab [[link](https://developer.nvidia.com/isaac/lab)][[docs](https://isaac-sim.github.io/IsaacLab/index.html)][[docs](https://docs.isaacsim.omniverse.nvidia.com/latest/isaac_lab_tutorials/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-lab)][[github](https://github.com/isaac-sim/IsaacLab)][[paper](https://research.nvidia.com/publication/2025-09_isaac-lab-gpu-accelerated-simulation-framework-multi-modal-robot-learning)]  
   an open-source platform based on Isaac Sim, currently the de facto framework for robot learning in Omniverse.  
   Formerly _Isaac Orbit_.
   > a unified and modular framework for robot learning that aims to simplify common workflows in robotics research (such as RL, learning from demonstrations, and motion planning). It is built upon NVIDIA Isaac Sim to leverage the latest simulation capabilities for photo-realistic scenes, and fast and efficient simulation.
@@ -219,11 +219,11 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 - Newton [[github](https://github.com/newton-physics/newton)][[blog](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)][[gtc25](https://www.nvidia.com/en-us/on-demand/session/gtc25-s72709/)][[gtc-paris25](https://www.nvidia.com/en-us/on-demand/session/gtcparis25-gp1133/)]
 
-  May become an Isaac Sim simulation backend [in the future](https://github.com/isaac-sim/IsaacSim/discussions/9).
-
   > an open-source, extensible physics engine being developed by NVIDIA, Google DeepMind, and Disney Research to advance robot learning and development.
   >
   > -- [NVIDIA Newton](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)
+
+  - Now integrated into Isaac Lab (Beta) [[link](https://github.com/isaac-sim/IsaacLab/tree/feature/newton)].
 
 ### GR00T (Generalist Robot 00 Technology)
 
@@ -254,7 +254,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 ### Cosmos
 
-- Cosmos [[link](https://www.nvidia.com/en-us/ai/cosmos/)][[docs](https://developer.nvidia.com/cosmos)][[github](https://github.com/NVIDIA/Cosmos)][[paper](https://arxiv.org/abs/2501.03575)][[blog](https://blogs.nvidia.com/blog/cosmos-world-foundation-models)][[youtube](https://youtu.be/9Uch931cDx8)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-6751e884dc10e013a0a0d8e6)]
+- Cosmos [[link](https://www.nvidia.com/en-us/ai/cosmos/)][[docs](https://developer.nvidia.com/cosmos)][[github](https://github.com/NVIDIA/Cosmos)][[paper](https://arxiv.org/abs/2501.03575)][[paper](https://research.nvidia.com/publication/2025-09_world-simulation-video-foundation-models-physical-ai)][[blog](https://blogs.nvidia.com/blog/cosmos-world-foundation-models)][[youtube](https://youtu.be/9Uch931cDx8)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-6751e884dc10e013a0a0d8e6)]
   > a platform of state-of-the-art generative world foundation models (WFM), advanced tokenizers, guardrails, and an accelerated data processing and curation pipeline built to accelerate the development of physical AI systems such as autonomous vehicles (AVs) and robots.
   >
   > -- [NVIDIA Cosmos](https://www.nvidia.com/en-us/ai/cosmos/)
