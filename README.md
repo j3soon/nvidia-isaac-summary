@@ -88,6 +88,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
   - [Deprecated] [(Omniverse) Replicator Insight](https://tutorial.j3soon.com/robotics/deprecated-components/#omniverse-replicator-insight)
 
+NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-world-scenes-in-interactive-simulation)]
+
 ### Isaac Lab
 
 - Isaac Lab [[link](https://developer.nvidia.com/isaac/lab)][[docs](https://isaac-sim.github.io/IsaacLab/index.html)][[docs](https://docs.isaacsim.omniverse.nvidia.com/latest/isaac_lab_tutorials/index.html)][[ngc](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/isaac-lab)][[github](https://github.com/isaac-sim/IsaacLab)][[paper](https://research.nvidia.com/publication/2025-09_isaac-lab-gpu-accelerated-simulation-framework-multi-modal-robot-learning)]  
@@ -98,6 +100,9 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > -- [NVIDIA Isaac Lab](https://isaac-sim.github.io/IsaacLab/index.html)
 
   For more details on the position of Isaac Lab in the Isaac ecosystem, see the [Isaac Lab Ecosystem](https://isaac-sim.github.io/IsaacLab/main/source/setup/ecosystem.html).
+
+- Isaac Lab Arena [[blog](https://developer.nvidia.com/blog/streamline-robot-learning-with-whole-body-control-and-enhanced-teleoperation-in-nvidia-isaac-lab-2-3/)]  
+  > To be released.
 
 - [Deprecated] [Isaac Orbit](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-orbit), [(Omniverse) Isaac Gym](https://tutorial.j3soon.com/robotics/deprecated-components/#omniverse-isaac-gym), [Isaac Gym (Preview Release)](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-gym-preview-release).
 
@@ -223,7 +228,7 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [NVIDIA Newton](https://developer.nvidia.com/blog/announcing-newton-an-open-source-physics-engine-for-robotics-simulation/)
 
-  - Now integrated into Isaac Lab (Beta) [[link](https://github.com/isaac-sim/IsaacLab/tree/feature/newton)].
+  - Now integrated into Isaac Lab (Beta) [[link](https://github.com/isaac-sim/IsaacLab/tree/feature/newton)][[docs](https://isaac-sim.github.io/IsaacLab/main/source/experimental-features/newton-physics-integration/index.html)].
 
 ### GR00T (Generalist Robot 00 Technology)
 
@@ -240,6 +245,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
     >
     > -- [NVIDIA Isaac GR00T N1](https://github.com/NVIDIA/Isaac-GR00T)
 
+    - GR00T LeRobot SO-101 ARM [blog v1](https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning)[blog v2](https://huggingface.co/blog/nvidia/nvidia-isaac-gr00t-in-lerobot)
+
   - GR00T Workflows [[link](https://developer.nvidia.com/isaac/gr00t#section-key-workflows)]
 
     The GR00T workflows include GR00T-Teleop, GR00T-Mimic, GR00T-Gen, GR00T-Dexterity, GR00T-Mobility, GR00T-Control, and GR00T-Perception.
@@ -250,6 +257,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
     >
     > -- [GR00T Dreams](https://github.com/nvidia/gr00t-dreams)
 
+  - GR00T WholeBodyControl [[github](https://github.com/NVlabs/GR00T-WholeBodyControl)]
+
 - Open Physical AI Dataset [[blog](https://blogs.nvidia.com/blog/open-physical-ai-dataset/)][[huggingface](https://huggingface.co/collections/nvidia/physical-ai-67c643edbb024053dcbcd6d8)]
 
 ### Cosmos
@@ -258,25 +267,36 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   > a platform of state-of-the-art generative world foundation models (WFM), advanced tokenizers, guardrails, and an accelerated data processing and curation pipeline built to accelerate the development of physical AI systems such as autonomous vehicles (AVs) and robots.
   >
   > -- [NVIDIA Cosmos](https://www.nvidia.com/en-us/ai/cosmos/)
+  - Cosmos Cookbook [[docs](https://nvidia-cosmos.github.io/cosmos-cookbook/)]
   - Cosmos World Foundation Models [[link](https://developer.nvidia.com/cosmos#section-cosmos-models)][[github](https://github.com/nvidia-cosmos)]
     - Cosmos-Predict1 [[github](https://github.com/nvidia-cosmos/cosmos-predict1)][[website](https://research.nvidia.com/labs/dir/cosmos-predict1/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-predict1-67c9d1b97678dbf7669c89a7)]
       > a collection of general-purpose world foundation models for Physical AI that can be fine-tuned into customized world models for downstream applications.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
       - Cosmos-Predict2 [[github](https://github.com/nvidia-cosmos/cosmos-predict2)][[website](https://research.nvidia.com/labs/dir/cosmos-predict2/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-predict2-68028efc052239369a0f2959)]
+      - Cosmos-Predict2.5 [[github](https://github.com/nvidia-cosmos/cosmos-predict2.5)]
+
+      - Cosmos-Predict2-2B-Sample-Action-Conditioned [[huggingface](https://huggingface.co/nvidia/Cosmos-Predict2-2B-Sample-Action-Conditioned)]
+
       - Cosmos-Tokenize1 [[link](https://github.com/nvidia-cosmos/cosmos-predict1?tab=readme-ov-file#cosmos-predict1-models)]
 
     - Cosmos-Transfer1 [[github](https://github.com/nvidia-cosmos/cosmos-transfer1)][[website](https://research.nvidia.com/labs/dir/cosmos-transfer1/)][[huggingface](https://huggingface.co/collections/nvidia/cosmos-transfer1-67c9d328196453be6e568d3e)]
       > a world-to-world transfer model designed to bridge the perceptual divide between simulated and real-world environments.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+      - Cosmos-Transfer2.5 [[github](https://github.com/nvidia-cosmos/cosmos-transfer2.5)]
       - Cosmos-Drive-Dreams [[github](https://github.com/nv-tlabs/Cosmos-Drive-Dreams)][[website](https://research.nvidia.com/labs/toronto-ai/cosmos_drive_dreams/)][[paper](https://arxiv.org/abs/2506.09042)]
       - Cosmos-DiffusionRenderer [[github](https://github.com/nv-tlabs/cosmos1-diffusion-renderer)][[website](https://research.nvidia.com/labs/toronto-ai/DiffusionRenderer/)][[paper](https://arxiv.org/abs/2501.18590)]
+      - Integration with Omniverse Isaac Sim and Replicator [[docs](https://docs.omniverse.nvidia.com/guide-sdg/latest/case-studies/case4.html)]
 
     - Cosmos-Reason1 [[github](https://github.com/nvidia-cosmos/cosmos-reason1)][[website](https://research.nvidia.com/labs/dir/cosmos-reason1/)]
       > understand the physical common sense and generate appropriate embodied decisions in natural language through long chain-of-thought reasoning processes.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+
+    - Cosmos Curate [[github](https://github.com/nvidia-cosmos/cosmos-curate)]
+
+    - Cosmos Nemotron [[nim](https://build.nvidia.com/nvidia/cosmos-nemotron-34b)]
 
   - [Archived] Cosmos Models [[github](https://github.com/NVIDIA/Cosmos)]
     - Cosmos Diffusion Model [[github](https://github.com/NVIDIA/Cosmos/blob/main/cosmos1/models/diffusion/README.md)][[nim](https://build.nvidia.com/nvidia/cosmos-1_0-diffusion-7b)]
@@ -456,12 +476,22 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
   >
   > -- [MimicGen](https://arxiv.org/abs/2310.17596)
 
+  - Isaac Lab Mimic [[docs](https://isaac-sim.github.io/IsaacLab/main/source/overview/imitation-learning/teleop_imitation.html)]
+
+- SkillGen (i.e., SkillMimicGen) [[site](https://skillgen.github.io/)]
+
 - MineDojo [[github](https://github.com/MineDojo/MineDojo)][[docs](https://docs.minedojo.org/)][[site](https://minedojo.org/)][[paper](https://arxiv.org/abs/2206.08853)]
   > a new AI research framework for building open-ended, generally capable embodied agents.
   >
   > -- [MineDojo](https://github.com/MineDojo/MineDojo)
 
 - Other projects included in Isaac products such as [Curobo, FoundationPose](#isaac-ros), and [GR00T N1](#gr00t-generalist-robot-00-technology).
+
+## Official NVIDIA Learning Paths
+
+- [OpenUSD Learning Path](https://www.nvidia.com/en-us/learn/learning-path/openusd/)
+- [Digital Twins for Physical AI Learning Path](https://www.nvidia.com/en-us/learn/learning-path/digital-twins/)
+- [Robotics Fundamentals Learning Path](https://www.nvidia.com/en-us/learn/learning-path/robotics/)
 
 ## Coding References
 
@@ -531,7 +561,5 @@ You can also hover your cursor on the OmniGraph node title to see its namespace 
 ## Epilogue
 
 Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if you have spotted any errors or have questions regarding this document. For questions regarding the Isaac components, I recommend first going through the [Known Issues of Isaac Sim](https://docs.omniverse.nvidia.com/isaacsim/latest/known_issues.html), [Known Issues of Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/source/refs/issues.html), [Troubleshooting Guide for Isaac ROS](https://nvidia-isaac-ros.github.io/troubleshooting/index.html), then considering asking in the [NVIDIA Developer Forums](https://forums.developer.nvidia.com/) under the [Isaac topic](https://forums.developer.nvidia.com/c/isaac-sdk/15).
-
-I have documented some bug fixes and workarounds for Isaac in the [j3soon/isaac-extended](https://github.com/j3soon/isaac-extended) repository. I recommend also checking out that repository for reference.
 
 Last updated on 2025/05/26.
