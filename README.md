@@ -8,6 +8,10 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
 
 ### Overview
 
+- OpenUSD
+
+  - Learn OpenUSD [[github](https://github.com/NVIDIA-Omniverse/LearnOpenUSD)][[docs](https://docs.nvidia.com/learn-openusd/latest/index.html)]
+
 - Omniverse [[link](https://www.nvidia.com/en-us/omniverse/)][[docs](https://docs.omniverse.nvidia.com/)][[github](https://github.com/NVIDIA-Omniverse)][[youtube](https://www.youtube.com/@NVIDIAOmniverse)]
   > The platform for connecting and developing OpenUSD applications.
   >
@@ -85,6 +89,8 @@ The following is a list of NVIDIA Isaac components. [[link](https://developer.nv
     > a collection of extensions, python APIs, workflows, and tools such as Replicator Composer that enable a variety of synthetic data generation tasks.
     >
     > -- [NVIDIA Isaac Sim](https://docs.omniverse.nvidia.com/app_isaacsim/app_isaacsim/manual_replicator.html)
+
+  - NVIDIA Brev Deployment and Isaac Launchable [[link](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/installation/install_advanced_cloud_setup_brev.html)][[github](https://github.com/isaac-sim/isaac-launchable)]
 
   - [Deprecated] [(Omniverse) Replicator Insight](https://tutorial.j3soon.com/robotics/deprecated-components/#omniverse-replicator-insight)
 
@@ -293,6 +299,8 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
       > understand the physical common sense and generate appropriate embodied decisions in natural language through long chain-of-thought reasoning processes.
       >
       > -- [NVIDIA Cosmos](https://github.com/NVIDIA/Cosmos)
+    
+    - Cosmos-Embed1 [[link](https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/cosmos-embed1?version=1.0.0)]
 
     - Cosmos Curate [[github](https://github.com/nvidia-cosmos/cosmos-curate)]
 
@@ -329,7 +337,7 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
   >
   > -- [NVIDIA IGX Orin](https://www.nvidia.com/en-us/edge-computing/products/igx/)
 
-- OSMO [[link](https://developer.nvidia.com/osmo)]
+- OSMO [[link](https://developer.nvidia.com/osmo)][[github](https://github.com/NVIDIA/OSMO)][[docs](https://nvidia.github.io/OSMO/user_guide/index.html)]
   > a cloud-native workflow orchestration platform that lets you easily scale your workloads across distributed environments—from on-premises to private and public cloud. It provides a single pane of glass for scheduling complex multi-stage and multi-container heterogeneous computing workflows.
   >
   > -- [NVIDIA OSMO](https://developer.nvidia.com/osmo)
