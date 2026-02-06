@@ -107,8 +107,9 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
 
   For more details on the position of Isaac Lab in the Isaac ecosystem, see the [Isaac Lab Ecosystem](https://isaac-sim.github.io/IsaacLab/main/source/setup/ecosystem.html).
 
-- Isaac Lab Arena [[blog](https://developer.nvidia.com/blog/streamline-robot-learning-with-whole-body-control-and-enhanced-teleoperation-in-nvidia-isaac-lab-2-3/)]  
-  > To be released.
+- Isaac Lab Arena [[github](https://github.com/isaac-sim/IsaacLab-Arena)][[blog](https://developer.nvidia.com/blog/streamline-robot-learning-with-whole-body-control-and-enhanced-teleoperation-in-nvidia-isaac-lab-2-3/)]  
+
+- IsaacLabEvalTasks [[github](https://github.com/isaac-sim/IsaacLabEvalTasks)]
 
 - [Deprecated] [Isaac Orbit](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-orbit), [(Omniverse) Isaac Gym](https://tutorial.j3soon.com/robotics/deprecated-components/#omniverse-isaac-gym), [Isaac Gym (Preview Release)](https://tutorial.j3soon.com/robotics/deprecated-components/#isaac-gym-preview-release).
 
@@ -316,6 +317,9 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
     > a suite of image and video tokenizers that advances the state-of-the-art in visual tokenization, paving the way for scalable, robust and efficient development of large auto-regressive transformers (such as LLMs) or diffusion generators.
     >
     > -- [Cosmos Tokenizer](https://github.com/NVIDIA/Cosmos-Tokenizer)
+
+  - Cosmos Policy [[blog](https://huggingface.co/blog/nvidia/cosmos-policy-for-robot-control)]
+
   - [etc.](https://developer.nvidia.com/cosmos)
 
 ### Miscellaneous
@@ -337,7 +341,7 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
   >
   > -- [NVIDIA IGX Orin](https://www.nvidia.com/en-us/edge-computing/products/igx/)
 
-- OSMO [[link](https://developer.nvidia.com/osmo)][[github](https://github.com/NVIDIA/OSMO)][[docs](https://nvidia.github.io/OSMO/user_guide/index.html)]
+- OSMO [[link](https://developer.nvidia.com/osmo)][[github](https://github.com/NVIDIA/OSMO)][[docs](https://nvidia.github.io/OSMO/)]
   > a cloud-native workflow orchestration platform that lets you easily scale your workloads across distributed environments—from on-premises to private and public cloud. It provides a single pane of glass for scheduling complex multi-stage and multi-container heterogeneous computing workflows.
   >
   > -- [NVIDIA OSMO](https://developer.nvidia.com/osmo)
@@ -361,6 +365,11 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
   > -- [NVIDIA Omniverse Cloud](https://www.nvidia.com/en-us/omniverse/cloud/)
 
   Including Omniverse Cloud Sensor RTX APIs and others.
+
+- CloudXR SDK [[docs](https://docs.nvidia.com/cloudxr-sdk/latest/index.html)]
+  an SDK for streaming XR content from RTX GPUs.
+
+- AGILE (WBC-AGILE) [[github](https://github.com/nvidia-isaac/WBC-AGILE)]
 
 - Omniverse Farm [[docs](https://docs.omniverse.nvidia.com/farm/latest/index.html)]
   > Omniverse Farm Queue and Omniverse Farm Agent allow you to run tasks in the background, and to run automated jobs defined by you or others.
@@ -469,6 +478,10 @@ NuRec [[blog](https://developer.nvidia.com/blog/how-to-instantly-render-real-wor
       >
       > -- [NVIDIA R2D2](https://developer.nvidia.com/blog/r2d2-adapting-dexterous-robots-with-nvidia-research-workflows-and-models/)
 
+- Alpamayo (VLA) [[paper](https://arxiv.org/abs/2511.00088)][[blog](https://nvidianews.nvidia.com/news/alpamayo-autonomous-vehicle-development)][[github](https://github.com/NVlabs/alpamayo)][[huggingface](https://huggingface.co/nvidia/Alpamayo-R1-10B)]
+  - AlpaSim (lightweight simulator) [[github](https://github.com/NVlabs/alpasim)]
+  - Dataset [[huggingface](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles)]
+
 - Foundation Stereo [[github](https://github.com/NVlabs/FoundationStereo)][[site](https://nvlabs.github.io/FoundationStereo/)][[paper](https://arxiv.org/abs/2501.09898)]
   > a foundation model for stereo depth estimation designed to achieve strong zero-shot generalization.
   >
@@ -570,4 +583,4 @@ You can also hover your cursor on the OmniGraph node title to see its namespace 
 
 Please [open an issue](https://github.com/j3soon/nvidia-isaac-summary/issues) if you have spotted any errors or have questions regarding this document. For questions regarding the Isaac components, I recommend first going through the [Known Issues of Isaac Sim](https://docs.omniverse.nvidia.com/isaacsim/latest/known_issues.html), [Known Issues of Isaac Lab](https://isaac-sim.github.io/IsaacLab/main/source/refs/issues.html), [Troubleshooting Guide for Isaac ROS](https://nvidia-isaac-ros.github.io/troubleshooting/index.html), then considering asking in the [NVIDIA Developer Forums](https://forums.developer.nvidia.com/) under the [Isaac topic](https://forums.developer.nvidia.com/c/isaac-sdk/15).
 
-Last updated on 2025/05/26.
+Last updated on 2026/02/07.
